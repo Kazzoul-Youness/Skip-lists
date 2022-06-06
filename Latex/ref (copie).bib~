@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source
+% https://latex-tutorial.com/tutorials/bibtex/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@ARTICLE{ArticleDemaine,
+    AUTHOR="Professors Erik Demaine and Shafi Goldwasser",
+    TITLE="Introduction to Algorithms",
+    YEAR="March 18, 2004",
+    PUBLISHER = {MIT 6.046J/18.410J},
+    NOTE="Lecture Notes on Skip Lists.pdf"
+}
+
+
+@ARTICLE{ArticleHamel,
+    AUTHOR="Sylvie Hamel",
+    TITLE="Dictionnaires ordonnés et “Skip List”",
+    %YEAR="",
+    %PUBLISHER = {},
+    NOTE="IFT2015, A2009, Université de Montréal"   
+}
+
+@ARTICLE{ArticleSchwar,
+    AUTHOR="François Schwarzentruber",
+    TITLE="Skip lists - Listes à sauts.pdf",
+    YEAR="13 avril, 2021",
+    publisher = {École normale supérieure de Rennes},
+    NOTE="Maître de conférences dans le département informatique et télécommunications"
+}
+
+
+%Website
+@MISC{WEBSITE,
+    HOWPUBLISHED = "\url{https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/algo/cours/sda/liste_chainee.html}",
+    AUTHOR = " Pierre-Antoine Champin",
+    TITLE = "Algorithmique - Liste chaînée",
+    %MONTH = "Dec",
+    YEAR = "2015-2019",
+    NOTE = "CNRS le Département Informatique Doua - IUT Lyon 1. Accessed on 2022-03-06",
+    PUBLISHER={CNRS le Département Informatique Doua - IUT Lyon 1}
+}
+
+%Note de cours
+@book{NoteCours,
+	author = {Véronique Bruyère},
+	year = {2021},
+	title = {Rappels sur les arbres},
+	publisher = {notes prises dans le cours Structures de données Université UMONS Campus Charleroi}
+}
+
+
+@article{ArticlePugh,
+	title={Skip lists : A probabilistic alternative to balanced trees},
+	author={William Pugh},
+	journal={Communications of the ACM},
+	volume={33},
+	number={6},
+	pages={668--676},
+	year={1989},
+	publisher={Communications of the ACM}
+}
+
+@ARTICLE{ArticleZaretti,
+    AUTHOR="Steve Zaretti",
+    TITLE="La skip-list",
+    YEAR="15 août 2016"
+}
+
+
+%Website
+@MISC{WEBSITE:1,
+    HOWPUBLISHED = "\url{https://www.youtube.com/watch?v=oW2VnviRh5M}",
+    AUTHOR = "Dan Suthers",
+    TITLE = "Topic 05 D Analysis of Skip Lists for University of Hawaii Information and Computer Sciences course 311 on Algorithms. ",
+    MONTH = "sept",
+    YEAR = "2013 ",
+    NOTE = "Inverted course: lectures are online and problem solving in class. Based on Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein, Introduction to Algorithms, Third Edition The MIT Press, 2009. Accessed on mars 2022",
+    PUBLISHER={YouTube}
+}
+
+%Website
+@MISC{WEBSITE:2,
+    HOWPUBLISHED = "\url{https://www.coursera.org/lecture/trees-graphs-basics/skip-lists-7Uggo}",
+    AUTHOR = "Sriram Sankaranarayanan",
+    TITLE = "Skip Lists. Cours Data Science Foundations: Data Structures and Algorithms Spécialisation - Université du Colorado of Boulder ",
+    NOTE = "Trees and Graphs: Basics. Accessed on février 2022",
+    PUBLISHER={coursera}
+}
+
+%Inégalité de Boole
+@book{InegaliteDeBoole,
+	author = {Jean-François Renaud, professeur de mathématique},
+	year = {2021},
+	title = {Cours Probabilités et statistique, Inégalité de Boole},
+	publisher = {Université du Québec à Montréal (UQAM)}
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Book
+@BOOK{BOOK:1,
+    AUTHOR="John Doe",
+    TITLE="The Book without Title",
+    PUBLISHER="Dummy Publisher",
+    YEAR="2100"
+}
+
+%Inbook (specific pages)
+@INBOOK{BOOK:2,
+    AUTHOR="John Doe",
+    TITLE="The Book without Title",
+    PUBLISHER="Dummy Publisher",
+    YEAR="2100",
+    PAGES="100-200"
+}
+
+%Website
+@MISC{WEBSITE:1,
+    HOWPUBLISHED = "\url{http://example.com}",
+    AUTHOR = "Intel",
+    TITLE = "Example Website",
+    MONTH = "Dec",
+    YEAR = "1988",
+    NOTE = "Accessed on 2012-11-11"
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source: 
+% https://fr.overleaf.com/learn/latex/Bibliography_management_with_bibtex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@book{texbook,
+	author = {Donald E. Knuth},
+	year = {1986},
+	title = {The {\TeX} Book},
+	publisher = {Addison-Wesley Professional}
+}
+
+@book{latex:companion,
+	author = {Frank Mittelbach and Michel Gossens
+	and Johannes Braams and David Carlisle
+	and Chris Rowley},
+	year = {2004},
+	title = {The {\LaTeX} Companion},
+	publisher = {Addison-Wesley Professional},
+	edition = {2}
+}
+
+@book{latex2e,
+	author = {Leslie Lamport},
+	year = {1994},
+	title = {{\LaTeX}: a Document Preparation System},
+	publisher = {Addison Wesley},
+	address = {Massachusetts},
+	edition = {2}
+}
+
+@article{knuth:1984,
+	title={Literate Programming},
+	author={Donald E. Knuth},
+	journal={The Computer Journal},
+	volume={27},
+	number={2},
+	pages={97--111},
+	year={1984},
+	publisher={Oxford University Press}
+}
+
+@inproceedings{lesk:1977,
+	title={Computer Typesetting of Technical Journals on {UNIX}},
+	author={Michael Lesk and Brian Kernighan},
+	booktitle={Proceedings of American Federation of
+	Information Processing Societies: 1977
+	National Computer Conference},
+	pages={879--888},
+	year={1977},
+	address={Dallas, Texas}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

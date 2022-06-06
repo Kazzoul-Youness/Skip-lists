@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: KazzoulLRS.aux
+The style file: plain.bst
+Database file #1: ref.bib
+I was expecting a `,' or a `}'---line 29 of file ref.bib
+ :     
+ :     %NOTE="Maître de conférences dans le département informatique et télécommunications"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty publisher in NoteCours
+Warning--empty journal in ArticleDemaine
+Warning--empty publisher in NoteCours2
+Warning--empty journal in ArticleHamel
+Warning--empty journal in ArticleUnivSavoieRappelAlgorithmique
+Warning--empty journal in ArticleSchwar
+Warning--empty journal in ArticleDan
+Warning--empty journal in ArticleFacSciencesLile
+Warning--empty journal in ArticleZeratti
+You've used 12 entries,
+            2118 wiz_defined-function locations,
+            569 strings with 6258 characters,
+and the built_in function-call counts, 2717 in all, are:
+= -- 262
+> -- 90
+< -- 0
++ -- 38
+- -- 26
+* -- 117
+:= -- 498
+add.period$ -- 46
+call.type$ -- 12
+change.case$ -- 46
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 124
+empty$ -- 235
+format.name$ -- 26
+if$ -- 550
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 14
+newline$ -- 73
+num.names$ -- 24
+pop$ -- 72
+preamble$ -- 1
+purify$ -- 37
+quote$ -- 0
+skip$ -- 79
+stack$ -- 0
+substring$ -- 85
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 42
+warning$ -- 9
+while$ -- 26
+width$ -- 14
+write$ -- 133
+(There was 1 error message)

@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+
+\bibitem{NoteCours}
+Véronique Bruyère.
+\newblock {\em Rappels sur les arbres}.
+\newblock Consulté en premier quadrimestre 2022.
+\newblock Notes prises dans le cours Structures de données de Master en
+  sciences informatiques - Université UMONS.
+
+\bibitem{ArticleDemaine}
+Erik Demaine and al.
+\newblock Introduction to algorithms, lecture notes on skip lists.pdf.
+\newblock Consulté en octobre 2022.
+\newblock MIT 6.046J/18.410J.
+
+\bibitem{NoteCours2}
+Gilles~G EERAERTS.
+\newblock {\em ALGORITHMIQUE}.
+\newblock $3^e$ ÉDITION 2010–2011, Consulté en deuxième quadrimestre du
+  bloc complémentaire en 2021.
+\newblock Notes du cours S-INFO-048 - Année préparatoire au master 60 en
+  informatique ULB–UMons.
+
+\bibitem{ArticleHamel}
+Sylvie Hamel.
+\newblock Dictionnaires ordonnés et skip list.
+\newblock Consulté en octobre 2022.
+\newblock IFT2015, A2009, Université de Montréal.
+
+\bibitem{ArticleUnivSavoieRappelAlgorithmique}
+Jacques-Olivier Lachaud.
+\newblock Notes de cours info626, l3 stic informatique algorithmique avancée.
+\newblock Consulté en mai 2022.
+\newblock LAMA, Université de Savoie, url :
+  \url{http://www.lama.univ-savoie.fr/pagesmembres/lachaud/Cours/INFO626/Cours/notes-de-cours.pdf}.
+
+\bibitem{ArticlePugh}
+William Pugh.
+\newblock Skip lists : A probabilistic alternative to balanced trees.
+\newblock {\em Communications of the ACM}, 33(6):668--676, Rédaction en 1989
+  et consultation en otobre 2021.
+
+\bibitem{InegaliteDeBoole}
+Jean-François Renaud.
+\newblock {\em Cours Probabilités et statistique}.
+\newblock Université du Québec à Montréal (UQAM), Consulté en janvier
+  2022.
+
+\bibitem{WEBSITE:2}
+Sriram Sankaranarayanan.
+\newblock Trees and graphs: Basics - université du colorado of boulder.
+\newblock
+  \url{https://www.coursera.org/lecture/trees-graphs-basics/skip-lists-7Uggo}.
+\newblock Consulté en février 2022.
+
+\bibitem{ArticleSchwar}
+François Schwarzentruber.
+\newblock Skip lists - listes à sauts.
+\newblock Consulté en octobre 2022.
+\newblock École normale supérieure de Rennes, url :
+  \url{http://people.irisa.fr/Francois.Schwarzentruber/algo2/08skiplists.pdf}.
+
+\bibitem{ArticleDan}
+Dan Suthers.
+\newblock Probabilistic analysis and randomized algorithms.
+\newblock Consulté en mars 2022.
+\newblock University of Hawaii Information and Computer Sciences.
+
+\bibitem{ArticleFacSciencesLile}
+Jean-Stéphane Varré.
+\newblock Cours 4 - tables de hachage.
+\newblock Consulté en mai 2022.
+\newblock Faculté des Sciences et Technologies de Lille, url :
+  \url{https://www.fil.univ-lille1.fr/portail/archive19-20/~varre/portail/asd/doc/cours4-2.pdf}.
+
+\bibitem{ArticleZeratti}
+Steve Zaretti.
+\newblock La skip-list.
+\newblock Consulté en août 2021.
+\newblock UMONS - url : \url{https://steve.zaretti.be/files/skiplist.pdf}.
+
+\end{thebibliography}

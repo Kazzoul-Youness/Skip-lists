@@ -1,0 +1,2369 @@
+\documentclass[hidelinks,a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% indication des source dans caption pour les figures 
+%https://tex.stackexchange.com/questions/95029/add-source-to-figure-caption
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Bibliographie, fichier Bib  
+%source 1 : https://latex-tutorial.com/tutorials/bibtex/
+%source 2 : https://fr.overleaf.com/learn/latex/Bibliography_management_with_bibtex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{caption}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows.meta,
+	backgrounds,
+	chains,
+	positioning,
+	shapes.geometric, shapes.multipart
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table de hachage
+% source : Source modifier voir la réponse sur le forum !
+% lien : https://tex.stackexchange.com/questions/636419/draw-hash-table 
+% inspirer de https://tex.stackexchange.com/questions/428893/errors-when-drawing-extendible-hash-index-table-with-tikz-library
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,positioning, calc,shapes.multipart,chains,arrows}
+\tikzset{listnode/.style={rectangle split, rectangle split parts=2,
+		draw, rectangle split horizontal}}
+\tikzset{hashtable/.style={rectangle split, rectangle split parts=7,
+		draw, rectangle split}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% BST ABR source : https://tex.stackexchange.com/questions/422128/how-to-make-binary-search-trees-in-an-easy-and-straight-forward-way
+% by Caverac source profile https://tex.stackexchange.com/users/152462/caverac.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{amssymb}
+\def\nbR{\ensuremath{\mathrm{I\! R}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to add bullets to description lists?
+% Source : https://tex.stackexchange.com/questions/74279/how-to-add-bullets-to-description-lists
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{algorithm}    % http://ctan.org/pkg/algorithm
+\usepackage{algpseudocode} % http://ctan.org/pkg/algorithmicx
+
+% source 1 : https://shantoroy.com/latex/how-to-write--in-latex/
+\usepackage{xcolor}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+%%% Coloring the comment as blue %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+
+\SetKwInput{KwInput}{Entrée}               % Set the Input
+\SetKwInput{KwOutput}{Sortie}              % set the Output
+% Traduction des algorithmes inspiré de : 
+% https://mlg.ulb.ac.be/files/algorithm2e.pdf
+\SetKw{Return}{retourner}
+\SetKwComment{tcc}{/*}{*/}
+\SetKwComment{tcp}{//}{}
+\SetKwBlock{Begin}{Début}{Fin}
+\SetKwFor{For}{Pour}{faire}{Fin pour}
+\SetKwRepeat{Repeat}{Répéter}{jusqu'à}
+\SetKwFor{While}{Tant que}{faire}{Fin tant que}
+\SetKwIF{If}{ElseIf}{Else}{Si}{Alors}{Sinon Si}{Sinon}{Fin si}
+%\renewcommand{\algorithmicrequire}{\textbf{Entrée:}}
+%\renewcommand{\algorithmicensure}{\textbf{Sortie:}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Text au milieu des Flèche inspiré du code
+% Source : https://tex.stackexchange.com/questions/351824/how-to-draw-a-dashed-line-from-a-node-without-connecting-to-any-other-node-or-a 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+% Théoreme
+% Source: https://tex.stackexchange.com/questions/417952/custom-theorem-style
+\usepackage{blindtext}
+\usepackage[most]{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=5cm, minimum height=1cm,text centered, draw=black, fill=red!50]
+
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=black, fill=orange!30]
+
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Note en bas de page
+%Source : https://www.xm1math.net/doculatex/notesbasdepage.html
+\AddThinSpaceBeforeFootnotes % à insérer si on utilise \usepackage[french]{babel}
+\FrenchFootnotes % à insérer si on utilise \usepackage[french]{babel}
+
+\usepackage{perpage}
+\MakePerPage{footnote}
+\usepackage{remreset}
+\makeatletter\@removefromreset{footnote}{sec}\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Liste Chaînée - By Gonzalo Medina
+% source : https://tex.stackexchange.com/questions/19286/how-should-i-draw-a-singly-double-linked-list
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.multipart,chains,arrows}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Légende en bas du dessin - By Carina
+% source : https://tex.stackexchange.com/a/287301/256008
+\usepackage{capt-of}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sommaire cliquable 
+ \usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %  Changer la couleur d'un hyperlien
+ % source : https://tex.stackexchange.com/questions/248298/avoid-option-clash-for-package-xcolor
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
+\hypersetup{colorlinks, linkcolor={blue!50!black}, citecolor={green!20!black}, urlcolor={blue!60!black}}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Les démonstrations mathématiques
+% source : https://faq.gutenberg.eu.org/4_domaines_specialises/mathematiques/symboles/symbole_cqfd
+ \usepackage{amsthm}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dessiner les Skip lists 
+% source : https://github.com/mhyee/latex-examples/blob/master/skip_list.tex
+% We don't need the special font encodings, but still
+% good practice to include these. See:
+% http://tex.stackexchange.com/questions/664/why-should-i-use-usepackaget1fontenc
+% http://dsanta.users.ch/resources/type1.html
+\usepackage{ae,aecompl}
+% http://tex.stackexchange.com/a/44699
+% http://tex.stackexchange.com/a/44701
+% Use Latin Modern, an improved version of the Computer Modern font
+\usepackage{lmodern}
+% TikZ is what lets us draw graphics
+\usepackage{tikz}
+% chains lets us draw lines (or chains) between different nodes
+\usetikzlibrary{chains}
+% Disable page numbering
+% \pagestyle{empty}
+% Define our own macros, for convenience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \ensuremath{ARG} is used to enable mathematics mode in a macro
+% ARG will always be rendered in math mode,
+% regardless of which mode the macro is called in
+% http://www.giss.nasa.gov/tools/latex/ensuremath.html
+% \snode{ID}{NUMBER} becomes \node{ID}[item]{\ensuremath{NUMBER}}
+\newcommand{\snode}[2]{\node(#1)[item]{\ensuremath{#2}}}
+% \nodelabel{SUBSCRIPT} becomes \node[label]{\ensuremath{S_SUBSCRIPT}}
+\newcommand{\nodelabel}[1]{\node[label]{\ensuremath{S_#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	Encadrer un théorème 
+% Source : https://www.mathematex.fr/viewtopic.php?t=11182
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+%%%%%%%%%%%%%%%%%%% debut fichier boiboites.sty %%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{xkeyval}
+\RequirePackage{tikz}
+\RequirePackage{amssymb}
+
+\define@key{boxedtheorem}{titlecolor}{\def\titlecolor{#1}}
+\define@key{boxedtheorem}{titlebackground}{\def\titlebackground{#1}}
+\define@key{boxedtheorem}{background}{\def\background{#1}}
+\define@key{boxedtheorem}{titleboxcolor}{\def\titleboxcolor{#1}}
+\define@key{boxedtheorem}{boxcolor}{\def\boxcolor{#1}}
+\define@key{boxedtheorem}{thcounter}{\def\thcounter{#1}}
+\define@key{boxedtheorem}{size}{\def\size{#1}}
+\presetkeys{boxedtheorem}{titlecolor = black, titlebackground = white, background = white,%
+	titleboxcolor = black, boxcolor = black, thcounter=, size = .9\textwidth}{}
+
+\newcommand{\couleurs}[1][]{%
+	\setkeys{boxedtheorem}{#1}
+	\tikzstyle{fancytitle} =[draw=\titleboxcolor, rounded corners, fill=\titlebackground,
+	text= \titlecolor]
+	\tikzstyle{mybox} = [draw=\boxcolor, fill=\background, very thick,
+	rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
+}
+
+
+%Commande generique pour faire un joli encadrement
+\newsavebox{\boiboite}
+\newcommand{\titre}{Titre}
+\newenvironment{boite}[2][]%
+{%
+	\renewcommand{\titre}{#2}
+	\couleurs[#1]
+	\begin{lrbox}{\boiboite}%
+		\begin{minipage}[!h]{\size}
+		}%
+		{%
+		\end{minipage}
+	\end{lrbox}
+	\begin{center}
+		\begin{tikzpicture}
+			\node [mybox] (box){\usebox{\boiboite}};
+			\node[fancytitle, right=10pt] at (box.north west) {\titre};
+		\end{tikzpicture}
+	\end{center}
+}
+
+\newcommand{\newboxedtheorem}[4][]{%
+	\couleurs[#1]
+	\@ifnotempty{#4}{%
+		\@ifundefined{the#4}{\@ifundefined{\thcounter}{\newcounter{#4}}{%
+				\newcounter{#4}[\thcounter ] } } { }%
+	}
+	\newenvironment{#2}[1][]{%
+		\@ifnotempty{#4}{\refstepcounter{#4}}
+		\begin{boite}[#1]{\textbf{#3\@ifnotempty{#4}{ \csname the#4\endcsname}}\@ifnotempty{##1}{
+					(##1)}}
+		}%
+		{%
+		\end{boite}
+	}
+}
+%%%%%%%%%%%%%%%%%%%% end fichier boiboites.sty %%%%%%%%%%%%%%%%%%%%%%
+\makeatother
+\newboxedtheorem{theorem}{Theorem}{theorem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Page de garde
+% source : https://fr.overleaf.com/project/62555fd4743c4a85acdd6d63
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{ragged2e}
+\usepackage{eurosym}
+\usepackage{indentfirst}
+%\usepackage{minted}
+\usepackage{titlesec}
+\usepackage{pifont}
+\usepackage{url}
+\usepackage{epsf}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Les numérotation des pages personnalisée un mixte entre les deux disscussions dans les deux forums suivants :
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1. Discussion : [Latex] numérotation des pages personnalisée
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr} \usepackage{lastpage}
+
+\pagestyle{fancy}
+
+\renewcommand\headrulewidth{1pt} \fancyhead[L]{Lecture et rédaction scientifique} \fancyhead[R]{Skip list}
+
+\renewcommand\footrulewidth{0pt} \fancyfoot[C]{Umons - Master en Sciences informatiques} \fancyfoot[L]{Juin 2022} \fancyfoot[R]{\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2. Discussion : Commencer la numérotation des pages 
+% Solution par Yaamaaw
+% Source: https://www.developpez.net/forums/d796189/autres-langages/autres-langages/latex/mise-forme/commencer-numerotation-pages/
+\renewcommand{\thepage}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Corps du document :
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}	
+	
+	\begin{titlepage}
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+		\center
+		\textsc{\LARGE Université de Mons } \\[1cm]
+		\textsc{\Large Master en Sciences informatiques } \\[1cm]		
+		\includegraphics[scale=0.3]{index.png} \\[1.5cm]
+		\HRule \\[0.4cm]
+		{ \huge \bfseries Skip list\\[0.15cm] }
+		\HRule \\[1.1cm]
+		\Large Rapport de lecture et rédaction scientifique \\[1.8cm]
+		\large Présenté par Youness KAZZOUL
+		\\[1.8cm]
+		\large Directeur : Gwenaël JORET
+		\\[1.8cm]
+		Juin 2022
+	\end{titlepage}
+	
+	\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%	Remerciement	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	%\hspace*{-0.8cm}\textbf { \Large Remerciement} 	
+	~\\~\\
+	\textbf { \Large Remerciement} 
+	\\[1cm] 
+	\hspace*{0.5cm} Je voudrais tout d’abord adresser toute ma reconnaissance à madame Véronique BRUYERE de l’université de Mons, je la remercie de m’avoir donné l’occasion extraordinaire de réaliser ce travail de rédaction scientifique.
+	\\[0.5cm]
+	Je souhaiterais remercier mon directeur M. Gwenaël JORET sans oublier le directeur de l’année dernière M. Olivier DELGRANGE de l’université de Mons, leur patience, leur disponibilité et surtout leurs judicieux conseils ont contribué à alimenter ma réflexion. 
+	\\[0.5cm]
+	Je tiens également à témoigner toute ma gratitude à monsieur Vincent CALLUT de l’université de Mons pour son coaching et son aide. 
+	\\[0.5cm]
+	Et enfin, je voudrais aussi adresser mes remerciements à toutes les personnes qui ont contribué au succès de ce travail notamment pour avoir relu et corrigé mon travail ainsi qu’à mes très chers parents, mes sœurs, mes frères et mes amis, pour leurs soutiens constants et leurs encouragements.
+	\\[0.5cm]
+	À tous ces intervenants, je présente mes remerciements, mon respect et ma gratitude.
+
+	
+	\newpage
+	\tableofcontents
+%	\listoffigures
+	\newpage	
+
+
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%	Introduction	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Introduction}
+Le monde de l’informatique nécessite une bonne gestion des données pour pouvoir les traiter, les rechercher, les stocker et les supprimer. Aujourd'hui, nous sommes confronter à une lourde quantité de données, qui pour l’essentiel est générée par les outils technologiques de plus en plus performants et de plus en plus importants.\\[0.5cm]
+Il est impératif d’avoir une bonne structure de données, selon l’usage qu’il en sera fait, en veillant à réduire la complexité algorithmique pour être rapide et efficace. Il existe différents types de structures de données. Tous les types visent à répondre aux exigences logicielles. \textit{e.g.}, le traitement des données, comme les dictionnaires de données, les services d'indexation, les informations stockées dans des bases de données \textit{etc}, peut être représenté par les ABR (Arbre binaire de recherche), les AVL (autre famille d'arbres binaire de recherche qui sont automatiquement équilibré inventé par Adelson-Velsky et Landis, les hauteurs des deux sous-arbres d'un même nœud diffèrent au plus de un. La recherche, l'insertion et la suppression sont toutes en $\mathcal{O}$($\log(n)$ dans le pire des cas. L'insertion et la suppression nécessitent d'effectuer des rotations un peut difficile à implementer.) \footnote{\url{https://fr.wikipedia.org/wiki/Arbre_AVL}}, les TAS (heap en anglais, une autre famille d'arbres binaire qui permet de retrouver directement l'élément que l'on veut traiter en priorité, est un arbres binaire presque complet ordonné. \textit{i.e.}, tous ses niveaux sont remplis, sauf éventuellement le dernier, qui doit être rempli sur la gauche. Ses feuilles sont donc à la même distance minimale de la racine, plus ou moins 1. Ont été introduits par J. W. J. Williams en 1964 pour l'algorithme du tri par tas \textit{etc} \footnote{\url{https://fr.wikipedia.org/wiki/Tas_(informatique)}}),... et beaucoup d'autres familles d'arbres binaire. \\[0.5cm]
+Les Skip lists ont été présentées en 1989 par William Pugh, un professeur d’informatique à l’Université du Maryland sous l’article intitulé : \textbf{Skip lists : A probabilistic alternative to balanced trees} \cite{ArticlePugh} dans lequel il analyse en détail les performances d’une structure de données probabiliste nommée Skip list. Cette structure de données probabiliste à base de listes chaînées parallèles dont les éléments ont une hauteur qui leur est associée, peuvent être une alternative aux arbres équilibrés.\\[0.5cm]
+Dans ce travail, nous tenterons d'étudier les Skip lists. La section 2, portera sur les structures de données telles que les listes chaînées ordonnées, les arbres binaires de recherche et les tables de hachage. Dans la section 3, nous analyserons de plus près les Skip lists et je vous présenterai un exemple pour mieux les comprendre. À la section 4, on examinera les algorithmes de recherche, d'insertion et de suppression au travers d’exemples commentés. Nous les analyserons plus en détail à la section 5 pour bien comprendre leur comportement et surtout la complexité temporelle.
+
+	
+	\section{Structures de données}
+Cette section portera sur les structures de données telles que les listes chaînées ordonnées qui sont le point de départ des Skip lists. Nous étudierons aussi deux autres structures de données : les arbres binaires de recherche et les tables de hachage.
+
+	\subsection{Les listes chaînées ordonnées}
+Pour bien comprendre les Skip lists, dans un premier temps allons voir les listes chaînées ordonnées ou listes simplement liées, car elles sont basées sur ces structures de données.  
+\\[0.5cm] 	
+	\textbf {Définition} \medskip \\
+Une liste chaînée (en anglais linked list) désigne en informatique une structure de données représentant une collection ordonnée et de taille arbitraire d'éléments de même type, dont la représentation en mémoire de l'ordinateur est une succession de cellules faites d'un contenu et d'un pointeur vers une autre cellule. De façon imagée, l'ensemble des cellules ressemble à une chaîne dont les maillons seraient les cellules. La Figure 1 montre une liste chaînée ordonnée avec un pointeur vers le début. L'accès aux éléments d'une liste se fait de manière séquentielle : chaque élément permet l'accès au suivant (contrairement au tableau dans lequel l'accès se fait de manière directe, par adressage de chaque cellule dudit tableau) \footnote[3]{\url{https://fr.wikipedia.org/wiki/Liste\_chaînée}}. 
+
+
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\begin{tikzpicture}[
+		start chain,
+		every node/.style={font=\small},
+		item/.style={rectangle,minimum height=6mm,minimum width=1.5mm,draw=black},			
+		label/.style={rectangle,minimum size=1mm},			
+		list/.style={rectangle split, rectangle split parts=2,
+			draw, rectangle split horizontal}, >=stealth			
+		]		
+		% The nodes of the Skip lists are drawn in a matrix
+		% \\ delimits the rows while & delimits the columns
+		\matrix[row sep=4mm, column sep=7mm]{
+			% L1: 
+	\snode{1x}{L}; & & & & & & & & & & &	\\
+	& \snode{0a}{2}; & \snode{0b}{5}; & \snode{0c}{9}; & \snode{0d}{14} ; & \snode{0e}{17}; & \snode{0f}{23}; & \snode{0g}{28}; &  \snode{0h}{31}; & \snode{0i}{36}; & \snode{0j}{NULL};\\
+		};		
+		% Start chaining the nodes together
+		{
+			% Horizontal chains
+			[start chain] \chainin(0a); 
+			\chainin(0b) [join]; \chainin(0c) [join];			
+			\chainin(0d) [join]; \chainin(0e) [join]; 
+			\chainin(0f) [join]; \chainin(0g) [join]; 
+			\chainin(0h) [join]; \chainin(0i) [join]; \chainin(0j) [join];
+			%%%%%%%%%%%%% Ajout des  Fleches %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+			%%%%%% 1er niveau	
+			\draw[ ->] (1x) .. controls +(east:2em) and +(north:2em) .. (0a);		
+			\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b);
+			\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 			
+			\draw[ -stealth, shorten >= 0pt] (0c) to node {} (0d); 				
+			\draw[ -stealth, shorten >= 0pt] (0d) to node {} (0e); 			
+			\draw[ -stealth, shorten >= 0pt] (0e) to node {} (0f); 			
+			\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 			
+			\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 			
+			\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i); 			
+			\draw[ -stealth, shorten >= 0pt] (0i) to node {} (0j); 					
+		}			
+	\end{tikzpicture}
+
+% Légende en bas du dessin pour numéroté les figures - By Carina
+% source : https://tex.stackexchange.com/a/287301/256008	
+\captionof{figure}{Liste chaînée ordonnée.} 
+% Pour les source des figures
+%https://tex.stackexchange.com/questions/95029/add-source-to-figure-caption
+\caption*{Source: \textit{Code repéré en avril 2022 sur \href{https://tex.stackexchange.com/questions/19286/how-should-i-draw-a-singly-double-linked-list}{https://tex.stackexchange.com}, origine de Gonzalo Medina, et le code source développé figure en annexe.} } 
+\end{center}
+
+~\\
+\textbf {Rechercher un élément dans une liste chaînée ordonnée} \medskip \\
+Si on cherche \textit{e.g.}, la derniere clé 36 dans cette liste chaînée ordonnée (L) de la Figure 1, avec un pointeur vers le début (2).\\[0.5cm] 
+\textbf {Question : En combien de temps allons nous trouver cette valeur ?}\\
+\textbf {Solution :} On doit parcourir la liste en commençant par le début, et on compare notre clé avec chaque clé de la liste, et comme l'élément se trouve à la fin de la liste chaînée, alors il va falloir parcourir toute la liste chaînée. \\ C'est à dire que dans le pire des cas pour les n éléments, le temps de calcul est de l'ordre de n ou en $\mathcal{O}$(n).
+\\[0.5cm]
+
+\textbf {Avantages}
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item Elles sont des alternatives aux tableaux;
+	\item Ont une taille dynamique, contrairement aux tableaux, \textit{i.e.}, pour ajouter un nouveau élément à la fin d'un tableau plein, il faut recréer un nouveau tableau plus grand et recopier toutes les ancienes valeurs dans le nouveau tableau, et puis seulement on insère à la fin, tandis que les listes sont dynamiques;
+	\item Allocation de la mémoire seulement au cas de besoin.	
+\end{description} 
+~\\
+
+\textbf {Inconvénients}
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+\item Elles ont besoin de plus de mémoire pour stocker les pointeurs;
+\item Pour chercher une clé, il faut parcourir tous les nœuds jusqu'à l'élement souhaité; 
+\item On ne peut pas faire de la recherche dichotomique, contrairement aux tableaux;
+\item Le fait qu'une liste soit triée ne nous aide pas à trouver une clé rapidement.
+\end{description} 
+~\\
+
+\textbf {Complexité en temps} \\
+%La complexité  
+%\hypertarget{$Moyenne^1$}{\hyperlink{$Moyenne^1$}{$Moyenne^1$}}
+%en temps d’exécution sur l'ensemble des opérations effectuées pour toutes les données de taille n de la liste chaînée.
+Il y a souvent deux buts contradictoires lorsque l’on cherche à mettre au point un algorithme pour résoudre un problème donné :
+\begin{enumerate}
+	\item L’algorithme doit être facile à comprendre, coder, maintenir, mais aussi facile à vérifier. 
+	\item L’algorithme doit utiliser efficacement les ressources de l’ordinateur, c’est-à-dire s’exécuter rapidement, mais aussi prendre une place raisonnable en mémoire.
+\end{enumerate}
+Si un algorithme doit être utilisé très souvent, il est alors intéressant de mettre en œuvre une solution efficace en temps et/ou en espace mémoire. Il est alors utile de pouvoir comparer objectivement les complexités relatives \cite{ArticleUnivSavoieRappelAlgorithmique}.\\
+
+Dans cette section et les sections suivantes réservées à la complexité, nous allons se concentrer uniquement sur la complexité en temps.\\
+
+\textbf {Rechercher une donnée d dans une liste triée} \\
+La recherche d’un élément d dans une liste triée n’est pas compliquer, i.e., on parcourt la liste et si on atteint un élément plus grand que d, on conclu que ça ne sert a rien de continuer a chercher, car tous les éléments suivants sont plus grand que d, malgré cela la complexité est en $\mathcal{O}$(n) au pire des cas. ou n est le nombre des d’éléments dans a liste \cite{NoteCours2}. \\
+
+\textbf {Insertion dans une liste triée} \\
+Cette opération d’insertion a en entrée une liste triée L et un élément d, le but est d'insérer cet élément d de cette liste, et avoir en sortie une liste triée L'. 
+Pour ce faire, on repère le premier élément. Si il est plus grand que l'élément d, où il n’existe pas \textit{i.e.,} (cas d'une liste est vide), alors on insère notre élément d au début, la complexité est en $\mathcal{O}$(1), c'est ce qu'on appelle le cas d’insertion au début. Sinon on parcourt la liste jusqu’à trouver un élément k plus petit que d, à ce moment là on insère l'élément d juste après, c'est le cas d’insertion en $k^e$ position, qu'est en $ \mathcal{O}$(k).\\
+Il se peut que tous les éléments parcouru sont plus petit que d, à ce moment là on insère à la fin, c'est le pire des cas, la complexité est en $\mathcal{O}$(n) \cite{NoteCours2}. \\
+
+\textbf {La suppression dans une liste triée} \\
+Cette opération de suppression a en entrée une liste triée L et un élément en position k, le but est de supprimer cet élément, et en sortie avoir a une liste triée L' sans cet élément. Le seul élément qui va être modifier c’est celui qui précède l’élément à supprimer.\\
+La complexité de cette opération est en O(k), car la complexité de recherche est dominante ici \cite{NoteCours2}. \\
+
+
+%Quand le temps d'exécution en pire des cas et le meilleur des cas sont égaux, c'est à dire ont le même ordre de grandeur, dans ce cas la complexité moyenne en temps d’exécution est du même ordre. Et elle devienne intéressante seulement quand ils sont diffèrent.
+
+
+%\begin{table} [h]  
+%	\centering
+%	\begin{tabular}{|c|c|c|}
+%		\hline
+%		Complexité   &  \hypertarget{$Moyenne^1$}{\hyperlink{$Moyenne^1$}{$Moyenne^1$}}  &  Pire          \\	
+%		\hline
+%		Recherche   &  $\mathcal{O}$(n) &  $\mathcal{O}$(n) \\	
+%		\hline
+%		Insertion   &  $\mathcal{O}$(1) &  $\mathcal{O}$(1)   \\	
+%		\hline
+%		Suppression &  $\mathcal{O}$(1) &  $\mathcal{O}$(1)   \\	
+%		\hline
+%	\end{tabular}
+%	\caption{Complexité en temps des opérations sur les listes chaînées triées} 
+%	\label{table:mytable}
+%\end{table}
+
+
+	\subsection{Les arbres binaires de recherche}
+	\bigbreak 
+\textbf {Définition} \medskip  
+Un Arbre Binaire de Recherche (ABR) est une structure de données qui permet d'obtenir rapidement grâce à l'opération de Recherche tous les éléments qu'on souhaite trouver, et pour tout nœud x, la donnée qui s’y trouve est : 
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item plus grande que les données des sous-arbres gauche de x;
+	\item plus petite que les données des sous-arbres droit de x 
+\end{description} 	
+Donc, on peut dire que les ABR généralisent les listes triées \cite{NoteCours}.
+
+\begin{center}
+	\begin{tikzpicture}
+	[
+	every node/.style = {minimum width = 2em, draw, circle},
+	level/.style = {sibling distance = 50mm/#1}
+	]
+	\node {7}
+	child {node {5} 
+		child {node {3}
+			child {node {1}
+				child {edge from parent[draw = none]}
+				child {node {2}}						
+			}		
+			child {node {4}}	
+		}
+		child {node {6}							
+		}
+	}
+	child {node {12}
+		child {node {9}
+			child {node {8}}
+			child {node {10}
+				child {edge from parent[draw = none]}
+				child {node {11}}
+		}
+		}
+		child {node {13}}
+	};
+	\end{tikzpicture}
+\captionof{figure}{Arbre binaire de recherche équilibré.}
+\caption*{Source: \textit{Code repéré en mars 2022, sur \href{https://tex.stackexchange.com/questions/422128/how-to-make-binary-search-trees-in-an-easy-and-straight-forward-way}{https://tex.stackexchange.com}, origine de Caverac, et le code source développé figure en annexe.} } 
+\end{center}
+
+~\\
+
+\textbf{La recherche (k)} \medskip \\
+Lors de la recherche, en chaque nœud visité, on peut laisser tomber l’un des deux sous-arbres. On suit donc un chemin de la racine jusqu'à :
+
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item Un nœud contenant k , quand k est présent dans T.
+	\item Une référence vide, quand k est absent de T \cite{NoteCours}.
+\end{description} 	
+\textit{e.g.} si on cherche(11), on compare 11 avec la racine 7, (11 > 7) alors on laisse tomber le sous arbre gauche et on parcourt le sous arbre droite, et on recommence le même processus récursivement jusqu'à trouver 11 (s'il existe)
+
+Les Arbres Binaire de Recherche équilibrés de la Figure 2, garantissent un temps logarithmique dans le pire des cas. 
+
+~\\
+
+\textbf {Résumé sur les ABR} \medskip  
+	\begin{enumerate}		
+		
+\item ABR déséquilibrés de taille n, où chaque nœud interne a un seul fils (on appelle aussi un ABR dégénéré en une liste triée), Figure 3:		
+	\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+		\item La recherche est en $\mathcal{O}$(h), h est la hauteur.
+		\item L’insertion et la suppression s’apparentent à une recherche suivie d’un travail supplémentaire.
+		\item Au pire cas la recherche, l’insertion et la suppression d’une donnée sont en $\mathcal{O}$(h) = $\mathcal{O}$(n).
+	\end{description}
+
+\item ABR équilibrés de taille n:
+	\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+		\item Il existe plusieurs structures de données comme les AVL, les TAS, etc.
+		\item L’insertion et la suppression s’apparentent à une recherche suivie d’un travail.
+		\item Les opérations de recherche, d'insertion et de suppression, au pire cas sont en $\mathcal{O}(\log(n))$. 
+		\item Pour un ABR aléatoire exemple Figure 2, la hauteur vaut au pire cas $\mathcal{O}(\log(n))$, car on visite de l'ordre de h = $\mathcal{O}(\log(n))$, d’où l’intérêt de travailler avec des ABR équilibrés. \cite{NoteCours}
+		\item La solution qui consisterait à reconstruire complètement l’arbre de façon équilibrée après chaque insertion n’est pas satisfaisante, car elle serait en $\mathcal{O}$(n), ce qui fait perdre l’avantage du  $\mathcal{O}(\log(n))$. Par contre, si on commence par insérer toutes les valeurs, puis qu’on se contente de consulter très fréquemment la structure, il peut être intéressant de réaliser toutes les insertions de façon non-équilibrée dans un premier temps, puis de reconstruire l’arbre de façon équilibrée (une seule fois : le coût est alors négligeable). \cite{NoteCours2}
+	
+	\end{description}	
+	\end{enumerate}
+
+Voici un ABR déséquilibré : 
+\begin{center}
+	\begin{tikzpicture}
+		[every node/.style = {minimum width = 2em, draw, circle},
+		level/.style = {sibling distance = 35mm/#1}	]
+		\node {7}
+		child {edge from parent[draw = none]}
+		child {node {15}
+			child {node {9}
+				child {edge from parent[draw = none]}
+				child {node {12}
+					child {edge from parent[draw = none]}					
+					child {node {14}}
+				}
+			}
+			child {edge from parent[draw = none]}
+		};
+	\end{tikzpicture}
+	\captionof{figure}{Arbre Binaire de Recherche dégénéré en une liste triée.}
+	\caption*{Source: \textit{Code repéré en mars 2022 sur \href{https://tex.stackexchange.com/questions/422128/how-to-make-binary-search-trees-in-an-easy-and-straight-forward-way}{https://tex.stackexchange.com}, origine de Caverac, et le code source développé figure en annexe.} } 
+\end{center}
+
+~\\
+
+\textbf {Avantages d'ABR} \medskip \\
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item Facile à implémenter;
+	\item Recherche, insertion, et suppression rapides si l'ABR est équilibré.
+\end{description}
+
+~\\
+
+\textbf {Inconvénient d'ABR} \medskip \\
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item Rééquilibrage, \textit{i.e.} après une suppression ou insertion on se retrouve avec un déséquilibre qui peut provoquer parfois la dégénérescence en une liste.
+\end{description}
+
+~\\
+ 
+\textbf {Complexité en temps} \\
+%La complexité \hypertarget{$Moyenne^2$}{\hyperlink{$Moyenne^2$}{$Moyenne^2$}}
+%en temps d’exécution sur l'ensemble des opérations effectuées pour tous les n éléments de l'ABR.\\
+Pour un arbre binaire de recherche, les opérations d’insertion, de recherche et de suppression sont en $\mathcal{O}$(hauteur de l'arbre). par le théorème 7 du cours algorithmique du deuxième quadrimestre du bloc complémentaire \cite{NoteCours2}. Mais parfois dans le pire des cas, la hauteur est en $\mathcal{O}$(nombre de noeuds qu'il contient), donc en $\mathcal{O}$(n), \textit{e.g.}, Figure 3, où on a un ABR déséquilibrés de taille n, où chaque nœud interne a un seul fils. \cite{NoteCours2}\\[0.3cm]
+La hauteur d'un arbre binaire équilibré est en  $\mathcal{O}$(log(n)), où n est le nombre de nœuds dans l’arbre. Et donc dans le meilleur cas pour un arbre binaire de recherche équilibré contenant n nœuds, les opérations d’insertion, de recherche et de suppression sont en $\mathcal{O}$(log(n)). par le théorème 9 du cours algorithmique du deuxième quadrimestre du bloc complémentaire \cite{NoteCours2}\\
+
+
+%	\begin{table} [h]  
+%		\centering
+%		\begin{tabular}{|c|c|c|}
+%			\hline
+%			Complexité   & 	\hypertarget{$Moyenne^2$}{\hyperlink{$Moyenne^2$}{$Moyenne^2$}} 
+%			   &  Pire          \\	
+%			\hline
+%			Recherche   & $\mathcal{O}$($\log$(n)) &  $\mathcal{O}$(n)   \\	
+%			\hline
+%			Insertion   & $\mathcal{O}$($\log$(n)) &  $\mathcal{O}$(n)   \\	
+%			\hline
+%			Suppression & $\mathcal{O}$($\log$(n)) &  $\mathcal{O}$(n)   \\	
+%			\hline
+%		\end{tabular}
+%		\caption{Complexité en temps d'ABR équilibrés.} 
+%		\label{table:mytable}
+%	\end{table}
+
+\newpage
+	\subsection{Les tables de hachage}
+	
+	La Figure 4 montre une table de hachage, les tables de hachage, sont des structures de données qui généralisent la notion de tableau, elles sont utilisées pour stocker un nombre de données n fini petit (k-clés à stocker) par rapport au nombre total de données potentielles (univers de données) qu’est infini, \textit{e.g.} l’ensemble $\nbR$. 
+	
+	\bigbreak
+		
+	\textbf {Définition} 
+	\medskip \\
+	Une table de hachage est formée de d'un tableau T de taille m, et pour chacune des positions du tableau T, y a une référence qui peut être vide ou vers une liste chaînée, exemple Figure 4 on a 4 références vers des listes et 6 références vides, et les données se trouvent sur ces listes, les éléments sont stockés grâce à une fonction de hachage h; et les éléments de la liste référencée par le tableau T sont les données qui ont la même image i par h. \medskip \\
+	Il s'agit d'un tableau ne comportant pas d'ordre (contrairement à un tableau ordinaire qui est indexé par des entiers). On accède à chaque valeur du tableau par sa clé, qu’est transformée par une fonction de hachage en une valeur de hachage (un nombre) indexe les éléments de la table, ces derniers étant appelés alvéoles (en anglais, buckets ou slots). \footnote[4]{\url{https://fr.wikipedia.org/wiki/Table_de_hachage}}
+	
+	\bigbreak\bigbreak
+	
+		
+\begin{center}	
+\begin{tikzpicture}[%scale=.2,
+	node distance = 7mm and 4mm,
+	start chain = going right, 
+	arr/.style = {semithick, -Stealth},
+	dot/.style = {circle, fill, inner sep=1.2pt,
+		label=left:#1},
+	every label/.append style = {font=\footnotesize, fill=white, align=center,
+		fill opacity=0.5, text opacity=1, 
+		inner sep=1pt},
+	E/.style = {ellipse, draw, fill=#1},
+	mpnh/.style = {rectangle split, rectangle split horizontal, 
+		rectangle split parts=3, draw, fill=gray!20,
+		inner sep=2pt,
+		on chain},
+	mpnv/.style = {rectangle split, rectangle split parts=10,
+		rectangle split part fill={gray!30,gray!10,gray!30,gray!30,gray!30,
+			gray!10,gray!30,gray!10,gray!10,gray!30},
+		draw, minimum height=2ex},
+	sym/.style = {yshift=-1mm},
+	syp/.style = {yshift=+1mm},
+	]
+	\node[mpnv, label=T ] (H) 
+	{\nodepart{one}     $\diagup$
+		\nodepart{two}     \vphantom{$\diagup$} 
+		\nodepart{three}   $\diagup$
+		\nodepart{four}    $\diagup$
+		\nodepart{five}    $\diagup$
+		\nodepart{six}     \vphantom{$\diagup$} 
+		\nodepart{seven}   $\diagup$
+		\nodepart{eight}   \vphantom{$\diagup$} 
+		\nodepart{nine}    \vphantom{$\diagup$} 
+		\nodepart{ten}     $\diagup$
+	};
+	%
+	\node[mpnh, right=of H.two east] (A1) 
+	{\nodepart{one}  $\diagup$
+		\nodepart{two}  $k_1$
+		\nodepart{three}    \hphantom{$\diagup$}  
+	};
+	\node[mpnh] (A2)
+	{\nodepart{one}      \hphantom{$\diagup$}
+		\nodepart{two}      $k_4$
+		\nodepart{three}    $\diagup$
+	};
+	%
+	\node[mpnh, right=of H.six east] (B1)
+	{\nodepart{one}      $\diagup$
+		\nodepart{two}      $k_5$
+		\nodepart{three}    \hphantom{$\diagup$}
+	};
+	\node[mpnh] (B2)
+	{\nodepart{one}      \hphantom{$\diagup$}
+		\nodepart{two}      $k_2$
+		\nodepart{three}    \hphantom{$\diagup$}
+	};
+	\node[mpnh] (B3)
+	{\nodepart{one}      \hphantom{$\diagup$}
+		\nodepart{two}      $k_7$
+		\nodepart{three}    $\diagup$ 
+	};
+	%
+	\node[mpnh, right=of H.eight east] (C1)
+	{\nodepart{one}      $\diagup$
+		\nodepart{two}      $k_3$
+		\nodepart{three}    $\diagup$
+	};
+	%
+	\node[mpnh, right=of H.nine east] (D1)
+	{\nodepart{one}  $\diagup$
+		\nodepart{two}  $k_8$
+		\nodepart{three}    \hphantom{$\diagup$}
+	};
+	\node[mpnh] (D2)
+	{\nodepart{one}      \hphantom{$\diagup$}
+		\nodepart{two}      $k_6$
+		\nodepart{three}    $\diagup$
+	};
+	%% arrows (right)
+	\draw[arr]  (H |- H.two east)   edge (A1)
+	(H |- H.six east)   edge (B1)
+	(H |- H.eight east) edge (C1)
+	(H |- H.nine east)   to (D1)
+	;
+	\draw[arr, transform canvas={yshift=1mm}]  
+	(A1.three north |- A1.east)  edge (A2)
+	(B1.three north |- B1.east)  edge (B2)
+	(B2.three north |- B2.east)  edge (B3)
+	(D1.three north |- D2)   to   (D2)
+	;
+	\draw[arr, transform canvas={yshift=-1mm}]
+	(A2.one north |- A2)  edge  (A1)
+	(B2.one north |- B2)  edge  (B1)
+	(B3.one north |- B3)  edge  (B2)
+	(D2.one north |- D2)   to   (D1)
+	;
+	%% dots, ellipses
+	\pgfmathsetseed{3}
+	Explicitly sets the seed for
+%	\foreach \i in {1,...,8}
+%	\node (k\i) [dot=$k_{\i}$] at (-33mm +50*rand,0.5*rand) {};
+	\node (k1) [dot=$k_1$] at (-40mm,0.7) {};
+	\node (k4) [dot=$k_4$] at (-30mm,0.4) {};
+	
+	\node (k2) [dot=$k_2$] at (-20mm,0.3) {};
+	\node (k5) [dot=$k_5$] at (-40mm,.2) {};
+	\node (k7) [dot=$k_7$] at (-30mm,-0.2) {};
+	
+	\node (k3) [dot=$k_3$] at (-25mm,-0.5) {};
+	
+	\node (k6) [dot=$k_6$] at (-45mm,-0.7) {};
+	\node (k8) [dot=$k_8$] at (-45mm,-0.2) {};
+	
+	
+	\scoped[on background layer]
+	{
+		\draw[fill=gray!30]  (-4,0.4) ellipse (3 and 2);
+%		\path   (-4,1.1) node[label={$U$\\\scriptsize(universe of keys)}] {};
+		\path   (-4,1.7) node[fill=gray!30, text=black] {\scriptsize U (univers des données)};	
+		
+		\draw[fill=white, opacity=0.9]   (-4,0) ellipse (2.6 and 1.3);
+		\path   (-6.6,0) node[label=right:\scriptsize ($K$\scriptsize -clés\\ \scriptsize à stocker)] {};
+		\draw[arr]  (k1)    edge ([syp] H.two west)
+		(k4)    edge ([sym] H.two west)
+		
+		(k2)    edge ([syp] H.six west)
+		(k5)    edge (H.six west)
+		(k7)    edge ([sym] H.six west)
+		
+		(k3)    edge (H.eight west)
+		
+		(k8)    edge ([syp] H.nine west)
+		(k6)    edge ([sym] H.nine west);
+	}
+\end{tikzpicture}
+%\caption{Table de Hachage}
+\captionof{figure}{Table de Hachage.}
+\caption*{Source: \textit{Repérée au cours "Rappels sur les arbres" de madame V. Bruyère, dessiné par Zarko sur lien du forum : \href{https://tex.stackexchange.com/questions/636419/draw-hash-table}{tex.stackexchange.com}, le code source développé figure en annexe.} } 
+\end{center}
+
+~\\ 
+	
+	\textbf {Avantages}
+	\begin{enumerate}		
+	\item Très facile à implémenter;
+	\item Complexité excellente en moyenne en temps constant, \textit{i.e.}, si les hypothèses suivantes se réalisent : 
+		\begin{description}[font=$\blacktriangleright$~\normalfont\scshape\color{red!50!black}]
+			\item Les données sont réparties équitablement sur les listes de T (hachage uniforme);
+			\item La fonction du hachage h(k) se calcule en temps constant;
+			\item le choix de m tel que $\dfrac{n}{m}$ est une constante. \cite{NoteCours}
+		\end{description}
+	\end{enumerate}	
+
+	\bigbreak\bigbreak
+	
+	\textbf {Inconvénients} 
+	\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+		\item Les risques de collisions.
+		\item Le hachage linéaire et quadratique n'utilisent que m permutations différentes sur les m! disponible. 
+		\item Pour le hachage linéaire ou le hachage quadratique, et au fur et à mesure des insertions, on a une augmentation en nombre et en longueur de blocs de données contiguës, ce qu'on appelle le "Phénomène de blocs", \textit{i.e.}, si on a deux données $k_1$ et $k_2$ qui ont le même point de départ, et donc on fait les mêmes sauts avant de trouver une case vide pour les insérer, car elles auront la même permutation. 
+		\item S'il y a trop de collisions, réallouer et déplacer les données.
+		\item En pratique, c'est difficile de bien choisir h et m, si on ne connaît pas bien les données à traiter ni leur nombre n. \cite{NoteCours}
+	\end{description}
+	
+~\\
+
+	\textbf {Complexité en temps} \\
+Dans cette structure de donnée, l’accès au bon alvéole est rapide en $\mathcal{O}$(1), grâce à la fonction de hachage qui nous renvoie l’indice adéquat dans le tableau. 
+
+~\\
+
+\textbf {Recherche} \\
+La recherche dépend de la longueur de la liste :
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item Meilleur des cas est en $\mathcal{O}$(1), quand aucune clé ayant la même adresse n’a été insérée (cas d'une recherche infructueuse), où quand la clé est en première position de la liste (cas d'une recherche fructueuse);
+	\item Pire des cas est en $\mathcal{O}$(n), quand toutes les clés insérées ont la même adresse, et donc elles sont insérées dans la même liste, et la clé qu’on cherche a la même adresse;
+	\item En moyenne sur l'ensemble des clés recherchés, si on suppose que la fonction de hachage est uniforme, et les n clés ont été hachées équitablement dans des alvéoles, les listes auront une longueur de $\dfrac{n}{m}$, et le temps moyen de la recherche est en $\mathcal{O}$(1+$\dfrac{n}{m}$), (le 1 c’est pour l’accès à l’alvéole)\cite{ArticleFacSciencesLile}.
+\end{description}
+~\\~\\
+L’insertion et la suppression se font comme dans une liste chaînée.
+Trouver l’alvéole est en $\mathcal{O}$(1) et tester l’existence est en O(m/n) (en moyenne sur l'ensemble des clés recherchées)\cite{ArticleFacSciencesLile}.
+
+~\\
+
+\textbf {Insertion} \\
+Ajouter en tête de liste est en $\mathcal{O}$(1)\cite{ArticleFacSciencesLile}.
+
+~\\
+
+\textbf {Suppression} \\
+Supprimer est en $\mathcal{O}$(1) (car la suppression d’un élément dans une liste, une fois l’élément trouvé, est en temps constant) \cite{ArticleFacSciencesLile}.
+
+
+%	- La complexité  
+%	\hypertarget{$Moyenne^3$}{\hyperlink{$Moyenne^3$}{$Moyenne^3$}}
+%	en temps d’exécution pour tous les n éléments de la table de hachage, pour la recherche, l'insertion et suppression sont en $\mathcal{O}$(1) si la fonction de hachage h et m sont bien choisis. Au pire des cas c’est en $\mathcal{O}$(n).
+	
+%	\begin{table} [h]  
+%		\centering
+%		\begin{tabular}{|c|c|c|}
+%			\hline
+%			Complexité  &  	\hypertarget{$Moyenne^3$}{\hyperlink{$Moyenne^3$}{$Moyenne^3$}}       &  Pire          \\	
+%			\hline
+%			Recherche   & $\mathcal{O}$(1) &  $\mathcal{O}$(n)   \\	
+%			\hline
+%			Insertion   & $\mathcal{O}$(1) &  $\mathcal{O}$(n)   \\	
+%			\hline
+%			Suppression & $\mathcal{O}$(1) &  $\mathcal{O}$(n)   \\	
+%			\hline
+%		\end{tabular}
+%		\caption{Complexité en temps des Tables de Hachage.} 
+%		\label{table:mytable}
+%	\end{table}
+	
+\newpage		
+\section{Skip lists}
+
+Les Skip list sont des structures de données inventées par Pugh en 1989. Elles sont des alternatives probabilistes aux arbres équilibrés. 
+Une Skip lists est une structures de données de recherche dynamique, de recherche parce qu’elle cherche des données (appelons clés). Si on ne trouve pas l'élément (appelons noeud), on trouve assez facilement son prédécesseur et/ou son successeur, et dynamique parce qu’elle permettent des mises à jour (insertion/suppression) des clés car ce n’est pas intéressant d’avoir une structure de données statique.
+
+~\\
+
+\subsection{Analogie}
+Analogie des Skip list avec le transport ferroviaire:
+On a vu que la complexité des listes chaînées ordonnées est en $\mathcal{O}$(n) au pire des cas, donc une liste chaînée trié ou pas, car le tri ne nous aide pas. Mais si on essaye d’améliorer les listes chaînées, nous découvrirons les Skip list car elles étendent les listes chaînées triées. En ajoutant une liste chaînée triées ($L_2$) au-dessus de notre liste de départ($L_1$) qui contient presque les mêmes éléments, comme dans la figure suivante: \hypertarget{depart3}{\hyperlink{Rechercher36}{\textbf {}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lien di dessin Skip lists : https://github.com/mhyee/latex-examples/blob/master/skip_list.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					Deux listes Chaînées
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	\begin{tikzpicture}[
+		start chain,
+		every node/.style={font=\small},
+		item/.style={rectangle,minimum height=6mm,minimum width=1mm,draw=black},			
+		label/.style={rectangle,minimum size=1mm},			
+		list/.style={rectangle split, rectangle split parts=2,
+			draw, rectangle split horizontal}, >=stealth			
+		]		
+		% The nodes of the Skip lists are drawn in a matrix
+		% \\ delimits the rows while & delimits the columns
+		\matrix[row sep=4mm, column sep=4mm]{
+							
+		% L2: 
+		\node {$L_2$:}; 
+		& \snode{1a}{-\infty}; & & & \snode{1d}{9}; & & & & \snode{1h}{28}; & &&\snode{1k}{+\infty};\\			
+		% L1: 
+		\node {$L_1$:}; 
+		& \snode{0a}{-\infty}; & \snode{0b}{2}; & \snode{0c}{5}; & \snode{0d}{9}; & \snode{0e}{14} ; & \snode{0f}{17}; & \snode{0g}{23}; & \snode{0h}{28}; &  \snode{0i}{31}; & \fill [green] (0.33,0.3) rectangle (-0.33,-0.3);\snode{0j}{36}; & \snode{0k}{+\infty};\\
+		};		
+%%%%%%%%%%%%%%%%%%% Chainage Horizontal %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+	{
+	%%%%%% 1er niveau	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 			
+	\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 			
+	\draw[ -stealth, shorten >= 0pt] (0c) to node {} (0d); 				
+	\draw[ -stealth, shorten >= 0pt] (0d) to node {} (0e); 			
+	\draw[ -stealth, shorten >= 0pt] (0e) to node {} (0f); 			
+	\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 			
+	\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 			
+	%\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i);
+	%\draw[ -stealth, shorten >= 0pt] (0i) to node {} (0j); 			
+	\draw[ -stealth, shorten >= 0pt] (0j) to node {} (0k); 			
+	%%%%%% 2eme niveau 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	%\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1a) to node {} (1d); 			
+	%\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1d) to node {} (1h); 			
+	\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1h) to node {} (1k); 					
+	%%%%%%%%%%%%%%%%%%% Vertical %%%%%%%%%%%%%%%%%%%%%%%%%%%%%			
+	\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a); 	
+	\draw[ -stealth, shorten >= 0pt] (1d) to node {} (0d);
+	\draw[ -stealth, shorten >= 0pt] (1h) to node {} (0h);
+	\draw[ -stealth, shorten >= 0pt] (1k) to node {} (0k);
+	
+	\draw[ ->,green] (1a) .. controls +(north:2em) and +(north:2em) .. (1d);	
+	\draw[ ->,green] (1d) .. controls +(north:2em) and +(north:2em) .. (1h);	
+	\draw[ ->,green] (1h) .. controls +(south:2em) and +(north:2em) .. (0h);
+	\draw[ ->,green] (0h) .. controls +(north:2em) and +(north:2em) .. (0i);
+	\draw[ ->,green] (0i) .. controls +(north:2em) and +(north:2em) .. (0j);
+	
+	}\textbf{}				
+	\end{tikzpicture}
+%\captionof{figure}{Skip list basique avec deux listes chaînées.} 
+\captionof{figure}{Skip list basique avec deux listes chaînées.}
+\caption*{ \small Source: \textit{Repéré en juillet 2021 sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+~\\
+Pour bien comprendre les Skip lists (Figure 5), prenons l’analogie des transports ferroviaires dans une grande ville comme Bruxelles, \textit{e.g.}, on a deux lignes de transport $L_1$, $L_2$, et les arrêts sont les éléments. Les deux lignes commencent par la première station ou se trouve le nœud -$\infty$ et le terminus est la station +$\infty$ \medskip \\
+- La première ligne, $L_1$ : est un métro qui dessert toutes les stations : -$\infty$, 2, 5, 9, 14, 17, 23, 28, 31, 36, +$\infty$ \medskip \\
+- La deuxième ligne, $L_2$ : est un train expres qui s’arrête seulement dans les stations -$\infty$, 9, 28 +$\infty$ \medskip \\
+Donc pour aller à la station numéro 36 on prend le train express on fait un saut vers 9, puis 28 on change et on prend le métro qui fait un arrêt 31 et puis on arrive a 36, c’est en 4 arrêts on arrive à destination, tandis que le métro s’arrête à toutes les stations avant d’atteindre notre objectif.
+
+~\\
+
+ \subsection{Définition} 
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	% Source : de la liste https://tex.stackexchange.com/questions/74279/how-to-add-bullets-to-description-lists
+	\item h représente le nombre maximum de niveaux (qu'on va appeler la hauteur) de la Skip list S;
+	\item La Skip list S consiste en une série de listes $\{L_0, L_1... L_h\}$ telles que chaque liste ${L_i}$ stocke un sous ensemble des éléments triés par ordre croissants;
+	\item Chaque liste a également deux nœuds (appelons sentinelles) $-\infty$ et $+\infty$, la valeur de la sentinelle $-\infty$ est plus petite que n'importe quelle clé possible de toute la liste, et celle de la sentinelle $+\infty$ est supérieure à n'importe quelle clé possible de la liste;
+	\item Le nœud avec la clé $-\infty$ est toujours à la position la plus à gauche et le nœud avec la clé $+\infty$ (on note parfois NULL) est toujours à la position la plus à droite;
+	\item Pour la visualisation, il est d'usage d'avoir la liste ${L_0}$ en bas et les listes $\{L_1, L_2... L_h\}$ au-dessus;
+	\item Chaque nœud d'une liste doit être sur un autre nœud avec la même clé en dessous. \textit{i.e.}, si ${L_{i+1}}$ a un nœud de clé k, alors ${L_i}$, ${L_{i-1}}$ ,... toutes les listes en dessous contiendront la même clé k;
+	\item Chaque élément (qu'on appelle parfois clé) est représenté par un nœud, dont le niveau est choisi de manière aléatoire lorsque le nœud est inséré sans tenir compte du nombre d'éléments de la structure de données;
+	\item Un nœud de niveau i a i pointeurs vers l'avant, indexés de 1 à i;
+	\item Le nombre de niveaux d'une Skip list est égal au niveau maximum de la Skip list (1 si la liste est vide);
+	\item Les niveaux max sont stockés dans une constante nommée MaxLevel et pas dans les nœuds. 	
+\end{description}
+
+~\\~\\
+
+\section{Algorithmes}
+On va étudier les algorithmes de recherches, d'insertion et de suppression, les appliquer sur des exemples et les commenter. 
+
+~\\
+
+\subsection{Algorithme de Recherche}
+Prenons un exemple de recherche d'une clé dans une Skip list comme le montre la figure 6 pour la clé 24 :
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					Skip lists recherche 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	\begin{tikzpicture}[
+		start chain,
+		every node/.style={font=\small},
+		item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+		label/.style={rectangle,minimum size=2mm},			
+		list/.style={rectangle split, rectangle split parts=2,
+			draw, rectangle split horizontal}, >=stealth	]		
+		% The nodes of the Skip lists are drawn in a matrix
+		% \\ delimits the rows while & delimits the columns
+		\matrix[row sep=4mm, column sep=6mm]{
+			% Row 4: 3 ... 50
+			\node{$L_4$:}; & \fill [green] (0.5,0.3) rectangle (-0.5,-0.3); \snode{3a}{-\infty};  & \fill [green] (0.3,0.3) rectangle (-0.3,-0.3); \snode{3b}{5}; & & & & & \snode{3g}{31}; & & \snode{3i}{+\infty} ;\\					
+			
+			% Row 3: 3 ... 20 ... 50
+			\node {$L_3$:}; & \snode{2a}{-\infty}; & \fill [green] (0.3,0.3) rectangle (-0.3,-0.3);   \snode{2b}{5};& & \fill [green] (0.35,0.3) rectangle (-0.35,-0.3);  \snode{2d}{16}; & & &\snode{2g}{31}; & & \snode{2i}{+\infty};\\			
+			
+			% Row 2: 3 ... 6 20 31 ... 50
+			\node {$L_2$:}; & \snode{1a}{-\infty}; &\snode{1b}{5}; & &\fill [green] (0.34,0.3) rectangle (-0.34,-0.3); \snode{1d}{16}; & \fill [green] (0.34,0.3) rectangle (-0.34,-0.3); \snode{1e}{20}; & &\snode{1g}{31}; & & \snode{1i}{+\infty};\\			
+			
+			% Row 1: 3 5 6 16 -20- 24 31 39 50
+			\node {$L_1$:}; & \snode{0a}{-\infty}; & \snode{0b}{5}; & \snode{0c}{6}; & \snode{0d}{16}; & \fill [green] (0.34,0.3) rectangle (-0.34,-0.3); \snode{0e}{20}; & \fill [green] (0.34,0.3) rectangle (-0.34,-0.3); \snode{0f}{24}; & \snode{0g}{31}; & \snode{0h}{39}; & \snode{0i}{+\infty};\\
+		};		
+% Start chaining the nodes together
+		{			
+%%%%%%%%%%%%% Ajout des  Fleches	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	%------------------------ Horizontal chainage --------------------------
+%%%%%% 4eme niveau --------------------------------------------------					
+			\draw[ -stealth, shorten <= 0pt, color=green] (3a) to node {} (3b); 	
+			\draw[ -stealth, shorten <= 0pt] (3b) to node {} (3g); 
+			\draw[ -stealth, shorten <= 0pt] (3g) to node {} (3i);  			
+%%%%%% 3eme niveau --------------------------------------------------		
+			\draw[ -stealth, shorten <= 0pt] (2a) to node {} (2b); 
+			\draw[ -stealth, shorten <= 0pt, color=green] (2b) to node {} (2d); 
+			\draw[ -stealth, shorten <= 0pt] (2d) to node {} (2g); 
+			\draw[ -stealth, shorten <= 0pt] (2g) to node {} (2i); 
+%%%%%% 2eme niveau --------------------------------------------------		
+			\draw[ -stealth, shorten <= 0pt] (1a) to node {} (1b);
+			\draw[ -stealth, shorten <= 0pt] (1b) to node {} (1d);
+			\draw[ -stealth, shorten <= 0pt, color=green] (1d) to node {} (1e);
+			\draw[ -stealth, shorten <= 0pt] (1e) to node {} (1g);
+			\draw[ -stealth, shorten <= 0pt] (1g) to node {} (1i);			
+%%%%%% 1er niveau --------------------------------------------------	
+			\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 			
+			\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 			
+			\draw[ -stealth, shorten >= 0pt] (0c) to node {} (0d); 				
+			\draw[ -stealth, shorten >= 0pt] (0d) to node {} (0e); 			
+			\draw[ -stealth, shorten >= 0pt, color=green] (0e) to node {} (0f); 			
+			\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 			
+			\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 			
+			\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i); 						
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  			
+%------------------------ Vertical chainage---------------------------------
+%%%%%% 1er noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (3a) to node {} (2a); 			
+			\draw[ -stealth, shorten >= 0pt] (2a) to node {} (1a); 			
+			\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a); 			
+%%%%%% 2eme noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt, color=green] (3b) to node {} (2b); 			
+			\draw[ -stealth, shorten >= 0pt] (2b) to node {} (1b); 			
+			\draw[ -stealth, shorten >= 0pt] (1b) to node {} (0b); 			
+%%%%%% 4eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt, color=green] (2d) to node {} (1d); 			
+			\draw[ -stealth, shorten >= 0pt] (1d) to node {} (0d); 			
+%%%%%% 5eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt, color=green] (1e) to node {} (0e); 			
+%%%%%% 7eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (3g) to node {} (2g); 			
+			\draw[ -stealth, shorten >= 0pt] (2g) to node {} (1g); 			
+			\draw[ -stealth, shorten >= 0pt] (1g) to node {} (0g);
+%%%%%% 9eme noeaud -----------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (3i) to node {} (2i);
+			\draw[ -stealth, shorten >= 0pt] (2i) to node {} (1i);
+			\draw[ -stealth, shorten >= 0pt] (1i) to node {} (0i);
+% Les sauts de fleches  ----------------------------------------------
+			\draw[ ->,red] (3a) .. controls +(north:2em) and +(north:2em) .. (3b);		
+			\draw[ ->,red] (2b) .. controls +(north:2em) and +(north:2em) .. (2d);	
+			\draw[ ->,red] (1d) .. controls +(north:2em) and +(north:2em) .. (1e);	
+			\draw[ ->,red] (0e) .. controls +(north:2em) and +(north:2em) .. (0f);
+			
+			\draw[ ->,red] (3b) .. controls +(west:2em) and +(west:2em) .. (2b);
+			\draw[ ->,red] (2d) .. controls +(west:2em) and +(west:2em) .. (1d);
+			\draw[ ->,red] (1e) .. controls +(west:2em) and +(west:2em) .. (0e);			
+		}
+		\textbf{}		
+		
+	\end{tikzpicture}
+\captionof{figure}{Rechercher la clé 24.}
+\caption*{ \small Source: \textit{Repéré sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+~\\~\\
+\textbf{La recherche de 24 se fait comme suivant} 
+~\\~\\ 
+- Se placer sur le niveau le plus haut $L_4$;\medskip \\ 
+- l’élément suivant est 5, est-ce que ($5 \le 24$) ? Oui, se déplacer sur 5; \medskip \\
+- L’élément suivant est 31, est-ce que ($31 \le 24$) ? Non, descendre d’un niveau plus bas au $L_3$ toujours dans noeud 5;\medskip \\
+- L’élément suivant est 16, est-ce que ($16 \le 24$) ? Oui, se placer sur le nœud 16 ;\medskip \\
+- L’élément suivant est 31, est-ce que ($31 \le 24$) ? Non, descendre d’un niveau plus bas au $L_2$ toujours dans noeud 16;\medskip \\
+- L’élément suivant est 20, est-ce que ($20 \le 24$) ? Oui, se placer sur le nœud 20 ;\medskip \\
+- L’élément suivant est 31, est-ce que ($31 \le 24$) ? Non, descendre d’un niveau plus bas au $L_1$ toujours dans noeud 20;\medskip \\
+- L’élément suivant est 24, est-ce que ($24 \le 24$) ?, alors notre élément 24 a été trouvé avec succès.
+
+~\\~\\ ~\\
+ \textbf {Pseudo code d'algorithme de Recherche} \medskip  \\
+ 
+ \begin{algorithm}[H]
+	\DontPrintSemicolon	
+	\caption{Algorithme de Recherche dans une Skip list}
+	\KwInput{Skip list liste, Entier CléRecherchée}
+	\KwOutput{Boolean Trouvé}
+	\Begin{
+		x := liste.entete \\
+		\tcp*{Parcourir les niveaux de la liste en partant du niveau haut jusqu’au niveau bas}
+		\For{(i:=liste.niveau \textbf{jusqu'au} 1)}{ 
+		\tcp*{Tant que la valeur du suivant du nœud courant est plus petite que la valeur Recherchée, on continue}	
+			\While{(x.suivant[i] < CléRecherchée) }
+			{		
+				x := x.suivant[i]
+			}
+		}
+		x := x.suivant[1]\\
+		\tcp*{Si élément trouvé renvoyer Trouvé sinon Non Trouvé }	
+		\If{(x = CléRecherchée)} 
+		{ 			
+			\Return Trouvé
+		}
+		\Else{
+			\Return Non Trouvé
+		}	
+	}	 
+ \end{algorithm}
+
+~\\~\\
+\textbf {Commentaires} \medskip  \\
+La recherche se fait sur deux plans horizontal (on avance vers la droite sur le même niveau) et vertical (descendre du haut vers le bas dans le même nœud);\smallskip \\
+On commence toujours à parcourir les éléments à partir de l’élément gauche (la sentinelle) du niveau le plus haut de la Skip list;\smallskip \\
+Tant que la valeur à chercher est supérieure à la valeur du nœud courant;\smallskip \\
+Se déplacer vers la droite;\smallskip \\
+Si la valeur est trouvée renvoyer la valeur; \smallskip \\
+Sinon, renvoyer échec.
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Algorithme d'insertion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+~\\
+\textbf {Calculer le niveau aléatoire} \\
+ Lors de l’insertion des clés, le niveau de chaque nœud est généré aléatoirement, et pour cela on a le petit algorithme suivant :\\
+
+\begin{algorithm}[H]
+	\hyperlink{depart2}{\hypertarget{rlvl}{}}  
+	\DontPrintSemicolon	
+	\KwOutput{Entier nouveauNiveau}
+	randomLevel() \\
+	\tcp*{random() renvoie une valeur aléatoire appartenant à l’intervalle [0...1) }
+	nouveauNiveau := 1 \\
+		\While{random() < p}
+		{	nouveauNiveau := nouveauNiveau + 1
+		}	 
+	\Return  min(nouveauNiveau,MaxLevel)
+	\caption{Calculer un niveau aléatoire}
+\end{algorithm}
+
+~\\~\\
+\textbf {Commentaires} \medskip  \\
+- MaxLevel est le niveau maximum de la Skip list. \\ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+%/* qui égal L(n)=Log_p/2 (n) reste à prouver*/. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
+- Cet algorithme nous garantit un niveau aléatoire jamais plus grand que MaxLevel. \\
+
+~\\
+\textbf {Insertion(18)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					Skip lists Insertion 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bigbreak 
+Pour insérer une clé nous cherchons tout simplement l’endroit approprié, nous l'insérons et mettons à jour les pointeurs, comme le montre les figures 7 et 8, 
+e.g : Prenons la Skip list précédente, et essayons d'inserer la clé 18, le tableau update est maintenu de sorte que lorsque la recherche est terminée, update contient un pointeur de l'élément droit du niveau i ou supérieur qui se trouve à gauche de l'emplacement \cite{ArticlePugh}.
+
+\begin{center}
+	\begin{tikzpicture}[
+		start chain,
+		every node/.style={font=\small},
+		item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+		label/.style={rectangle,minimum size=2mm},			
+		list/.style={rectangle split, rectangle split parts=2,
+			draw, rectangle split horizontal}, >=stealth			
+		]		
+		% The nodes of the Skip lists are drawn in a matrix
+		% \\ delimits the rows while & delimits the columns
+		\matrix[row sep=10mm, column sep=6mm]{						
+			% Row 4: -infi 5 ... 31 infini
+			\node{$L_4$:}; & \snode{3a}{-\infty};  &\snode{3b}{5}; & & & & & & \snode{3h}{31}; & & \snode{3j}{+\infty} ;\\					
+			
+			% Row 3: 3 ... 20 ... 50
+			\node {$L_3$:}; & \snode{2a}{-\infty}; & \snode{2b}{5};& & \snode{2d}{16}; & & & &\snode{2h}{31}; & & \snode{2j}{+\infty};\\			
+			
+			% Row 2: 3 ... 6 20 31 ... 50
+			\node {$L_2$:}; & \snode{1a}{-\infty}; &\snode{1b}{5}; & &\snode{1d}{16}; & &\snode{1f}{20};  & &\snode{1h}{31}; & & \snode{1j}{+\infty};\\			
+			
+			% Row 1: 3 5 6 16 -20- 24 31 39 50
+			\node {$L_1$:}; & \snode{0a}{-\infty}; & \snode{0b}{5}; & \snode{0c}{6}; & \snode{0d}{16}; & &\snode{0f}{20}; &  \snode{0g}{24}; & \snode{0h}{31}; & \snode{0i}{39}; & \snode{0j}{+\infty};\\
+		};		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%%%%%%%%% Elipse Source : https://latexdraw.com/draw-an-ellipse-in-tikz/
+% voir en haut \usepackage{tikz} et \usetikzlibrary{shapes.geometric}
+\node[ellipse, draw = blue, text = black, fill = cyan!20,
+	minimum width = 0.6cm, minimum height = 6cm] (e) at (0.05,0) {};
+\node[ellipse, draw = blue, text = black, fill = white!20, 
+	minimum width = 0.5cm, minimum height = 6cm] (e) at (0,0) {};	
+	
+		% Start chaining the nodes together
+		{
+%%%%%%%%%%%%% Ajout des  Fleches	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  	%------------------------ Horizontal chainage --------------------	
+%%%%%% 4eme niveau --------------------------------------------------					
+			\draw[ -stealth, shorten >= 0pt] (3a) to node {} (3b); 	
+			\draw[ -stealth, shorten >= 0pt] (3b) to node {} (3h); 
+			\draw[ -stealth, shorten >= 0pt] (3h) to node {} (3j); 
+%%%%%% 3eme niveau --------------------------------------------------		
+			\draw[ -stealth, shorten >= 0pt] (2a) to node {} (2b); 
+			\draw[ -stealth, shorten >= 0pt] (2b) to node {} (2d); 
+			\draw[ -stealth, shorten >= 0pt] (2d) to node {} (2h); 
+			\draw[ -stealth, shorten >= 0pt] (2h) to node {} (2j); 
+%%%%%% 2eme niveau --------------------------------------------------		
+			\draw[ -stealth, shorten >= 0pt] (1a) to node {} (1b);
+			\draw[ -stealth, shorten >= 0pt] (1b) to node {} (1d);
+			\draw[ -stealth, shorten >= 0pt] (1d) to node {} (1f);
+			\draw[ -stealth, shorten >= 0pt] (1f) to node {} (1h);
+			\draw[ -stealth, shorten >= 0pt] (1h) to node {} (1j);
+%%%%%% 1er niveau --------------------------------------------------	
+			\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 			
+			\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 			
+			\draw[ -stealth, shorten >= 0pt] (0c) to node {} (0d); 				
+			\draw[ -stealth, shorten >= 0pt] (0d) to node {} (0f); 			
+			\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 			
+			\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 			
+			\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i); 
+			\draw[ -stealth, shorten >= 0pt] (0i) to node {} (0j); 						
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  			
+%------------------- Vertical chainage---------------------------------
+%%%%%% 1er noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (3a) to node {} (2a);
+			\draw[ -stealth, shorten >= 0pt] (2a) to node {} (1a);
+			\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a);
+%%%%%%% 2eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (3b) to node {} (2b);
+			\draw[ -stealth, shorten >= 0pt] (2b) to node {} (1b);
+			\draw[ -stealth, shorten >= 0pt] (1b) to node {} (0b);
+%%%%%% 4eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (2d) to node {} (1d);
+			\draw[ -stealth, shorten >= 0pt] (1d) to node {} (0d);
+%%%%%% 5eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (1f) to node {} (0f); 
+%%%%%% 7eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (3h) to node {} (2h); 			
+			\draw[ -stealth, shorten >= 0pt] (2h) to node {} (1h); 			
+			\draw[ -stealth, shorten >= 0pt] (1h) to node {} (0h);
+%%%%%% 9eme noeaud --------------------------------------------------				
+			\draw[ -stealth, shorten >= 0pt] (3j) to node {} (2j); 			
+			\draw[ -stealth, shorten >= 0pt] (2j) to node {} (1j); 			
+			\draw[ -stealth, shorten >= 0pt] (1j) to node {} (0j); 			
+		}
+		\textbf{}		
+		
+	\end{tikzpicture} 
+\captionof{figure}{Positionnement où la clé 18 va être insérée.}
+\caption*{ \small Source: \textit{Repéré sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+~\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%En générale pour chaque insertion on lance une pièce d'argent équilibrée pour décider aléatoirement le niveau de chaque nœud.
+Pour chaque nouvelle insertion, on lance une pièce d’argent pour décider aléatoirement le niveau de l’élément. Si on a, pile, on monte d’un niveau, sinon on arrête. Et on continue à lancer une pièce jusqu'à ce qu’on obtienne face et on s’arrête. Si on génère un nœud avec un niveau supérieur au niveau maximum précédent de la Skip list, nous mettons à jour le niveau maximum (MaxLevel), et initialisons les parties appropriées du tableau update des pointeurs \cite{ArticlePugh}.
+
+~\\
+\textbf {Résultat après insertion de la clé 18} \\
+Dans notre exemple figure 8, on suppose que nous avons lancé une pièce d’argent équilibrée 5 fois de suite, et on a eu 4 fois face, et 1 fois pile. 
+
+\begin{center}
+	$\Downarrow$ $\Downarrow$ $\Downarrow$ 
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	\begin{tikzpicture}[
+		start chain,
+		every node/.style={font=\small},
+		item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+		label/.style={rectangle,minimum size=2mm},			
+		list/.style={rectangle split, rectangle split parts=2,
+			draw, rectangle split horizontal}, >=stealth	]		
+		% The nodes of the Skip lists are drawn in a matrix
+		% \\ delimits the rows while & delimits the columns
+		\matrix[row sep=10mm, column sep=6mm]{			
+			% Row 4: -infi 5 ... 31 infini
+			\node{$L_5$:}; & \snode{4a}{-\infty}; & & & &\fill [green] (0.34,0.30) rectangle (-0.33,-0.3); \snode{4e}{18}; & & & & & \snode{4j}{+\infty} ;\\								
+			
+			% Row 4: -infi 5 ... 31 infini
+			\node{$L_4$:}; & \snode{3a}{-\infty};  &\snode{3b}{5}; & & & \fill [green] (0.34,0.30) rectangle (-0.33,-0.3); \snode{3e}{18};  & & & \snode{3h}{31}; & & \snode{3j}{+\infty} ;\\					
+
+			% Row 3: 3 ... 20 ... 50
+			\node {$L_3$:}; & \snode{2a}{-\infty}; & \snode{2b}{5};& & \snode{2d}{16}; & \fill [green] (0.34,0.30) rectangle (-0.33,-0.3);  \snode{2e}{18}; & & &\snode{2h}{31}; & & \snode{2j}{+\infty};\\			
+			
+			% Row 2: 3 ... 6 20 31 ... 50
+			\node {$L_2$:}; & \snode{1a}{-\infty}; &\snode{1b}{5}; & &\snode{1d}{16}; & \fill [green] (0.34,0.30) rectangle (-0.33,-0.3);  \snode{1e}{18}; &\snode{1f}{20}; & &\snode{1h}{31}; & & \snode{1j}{+\infty};\\			
+			
+			% Row 1: 3 5 6 16 -20- 24 31 39 50
+			\node {$L_1$:}; & \snode{0a}{-\infty}; & \snode{0b}{5}; & \snode{0c}{6}; & \snode{0d}{16}; & \fill [green] (0.34,0.30) rectangle (-0.33,-0.3);  \snode{0e}{18}; & \snode{0f}{20}; &  \snode{0g}{24}; & \snode{0h}{31}; & \snode{0i}{39}; & \snode{0j}{+\infty};\\
+		};		
+				%	\draw (0.1,0) circle (2);
+		% Start chaining the nodes together
+		{
+			%%%%%%%%%%%%% Ajout des  Fleches	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  	%------------------------ Horizontal chainage --------------------
+			%%%%%% 5eme niveau --------------------------------------------------					
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=blue] (4a) to node {} (4e); 	
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=blue] (4e) to node {} (4j); 
+			%%%%%% 4eme niveau --------------------------------------------------					
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=black] (3a) to node {} (3b); 	
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=blue] (3b) to node {} (3e); 
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=blue] (3e) to node {} (3h); 
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (3h) to node {} (3j); 
+			%%%%%% 3eme niveau --------------------------------------------------		
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2a) to node {} (2b); 
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2b) to node {} (2d); 
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=blue] (2d) to node {} (2e); 
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=blue] (2e) to node {} (2h); 
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2h) to node {} (2j); 
+%			%%%%%% 2eme niveau --------------------------------------------------		
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1a) to node {} (1b);
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1b) to node {} (1d);
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=blue] (1d) to node {} (1e);
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt, color=blue] (1e) to node {} (1f);
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1f) to node {} (1h);
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1h) to node {} (1j);
+%			%%%%%% 1er niveau --------------------------------------------------	
+			\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 			
+			\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 			
+			\draw[ -stealth, shorten >= 0pt] (0c) to node {} (0d); 				
+			\draw[ -stealth, shorten >= 0pt, color=blue] (0d) to node {} (0e); 			
+			\draw[ -stealth, shorten >= 0pt, color=blue] (0e) to node {} (0f); 			
+			\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 			
+			\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 			
+			\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i); 
+			\draw[ -stealth, shorten >= 0pt] (0i) to node {} (0j); 							
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  	
+			%------------------------ Vertical chainage---------------------------------
+			%%%%%% 1er noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (4a) to node {} (3a);
+			\draw[ -stealth, shorten >= 0pt] (3a) to node {} (2a);
+			\draw[ -stealth, shorten >= 0pt] (2a) to node {} (1a);
+			\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a);
+%			%%%%%% 2eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (3b) to node {} (2b);
+			\draw[ -stealth, shorten >= 0pt] (2b) to node {} (1b);
+			\draw[ -stealth, shorten >= 0pt] (1b) to node {} (0b);
+%			%%%%%% 4eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (2d) to node {} (1d);
+			\draw[ -stealth, shorten >= 0pt] (1d) to node {} (0d);
+			%%%%%% 5eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt,color=blue] (4e) to node {} (3e); 
+			\draw[ -stealth, shorten >= 0pt,color=blue] (3e) to node {} (2e); 
+			\draw[ -stealth, shorten >= 0pt,color=blue] (2e) to node {} (1e); 
+			\draw[ -stealth, shorten >= 0pt,color=blue] (1e) to node {} (0e); 
+			%%%%%% 8eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (3h) to node {} (2h); 			
+			\draw[ -stealth, shorten >= 0pt] (2h) to node {} (1h); 			
+			\draw[ -stealth, shorten >= 0pt] (1h) to node {} (0h);
+			%%%%%% 10eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (4j) to node {} (3j);
+			\draw[ -stealth, shorten >= 0pt] (3j) to node {} (2j);
+			\draw[ -stealth, shorten >= 0pt] (2j) to node {} (1j);
+			\draw[ -stealth, shorten >= 0pt] (1j) to node {} (0j);
+%			% Les sauts de fleches  ----------------------------------------------
+%source : https://tex.stackexchange.com/questions/235754/generate-labels-for-arrows-in-tikz
+\draw[->, bend left=20, red] (3b) to  node[fill=white] {$X$ ... $X$} (3h);
+\draw[->, bend left=25, red] (2d) to node[fill=white] {$X$ ... $X$} (2h);				
+\draw[->, bend left=60, red] (1d) to node[fill=white] {$X$ ... $X$} (1f);
+\draw[->, bend left=60, red] (0d) to node[fill=white] {$X$ ... $X$} (0f);	
+		}		
+	\end{tikzpicture}
+%\captionof{figure}{} 
+
+\captionof{figure}{Insertion de la clé 18, et mise à jours des pointeurs.}
+\caption*{ \small Source: \textit{Repéré sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+~\\
+\textbf {Commentaires} 
+\begin{enumerate}
+\item \hypertarget{EtapesInsertion}{\hyperlink{depart3}{}} On commence toujours à parcourir les éléments à partir de l'entete de la sentinelle gauche du niveau le plus haut de la Skip list jusqu'au niveau le plus bas;
+\item Tant que la clé du nœud suivant est inférieure à la clé qu’on veut insérer, ou nous sommes pas arrivés à la fin, on continue à avancer sur le même niveau; 
+\item Sinon on stock le pointeur dans le tableau update, et on descend d’un niveau s'il existe;
+\item On répète dans une boucle le même processus \hypertarget{depart1}{\hyperlink{La recherche de 24}{vu avant lors de la recherche de la clé 24}}. 
+Aller vers la droite puis vers le bas jusqu'au niveau le plus bas où on trouve l’endroit souhaité pour insérer la clé;
+\item Si la valeur n'existe pas on procède à l'insertion comme suit :
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item On génère une hauteur aléatoire avec 
+	\hypertarget{depart2}{\hyperlink{rlvl}{l'algorithme 2 : "Calculer un niveau aléatoire"}}; 
+	\item Si la hauteur aléatoire est plus grande que l'ancienne hauteur ;\\
+	i) Dans une boucle on parcourt tous les niveaux allant de (l'ancien + 1) jusqu'au la nouvelle hauteur;\\
+	ii) mettre à jours le tableau update des pointeurs ;
+	\item On change la hauteur avec la nouvelle hauteur générée; 
+	\item On crée un nouveau nœud ;
+	\item Dans une boucle on parcourt une dernière fois les niveaux allant de 1 jusqu'à la nouvelle hauteur aléatoire;\\ 
+	 i) on insère la nouvelle clé et on met à jour le tableau des pointeurs.	
+\end{description}	
+\end{enumerate}
+
+\newpage
+
+Voici un exemple de tableau update après insertion de la valeur 18 : 
+		
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Code modifié pour les tableau avec caption
+	% Source : https://tex.stackexchange.com/questions/505159/table-caption-in-the-middle-of-the-table
+	% By Werner : https://tex.stackexchange.com/users/5764/werner
+	\begin{table} [h]  
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			Niveau   & 1  & 2  & 3  & 4 & 5\\	
+			\hline
+			Pointeur & 16 & 16 & 16 & 5 & -$\infty$ \\	
+			\hline
+		\end{tabular}
+		\caption{Tableau update} 
+		\label{table:mytable}
+	\end{table}
+
+~\\~\\
+\textbf {Pseudo code d'algorithme d’insertion} \medskip  \\
+  \begin{algorithm}[H]
+	\DontPrintSemicolon	
+	\KwInput{(Skip list Liste, Entier nouvelleValeur)}
+	\KwOutput{Skip list Liste}
+	\Begin{	
+	Création du tableau update [1 ... Maxlevel] \\
+	x := liste.entete \\
+			\tcp*{Parcourir les niveaux de la liste en partant du niveau haut jusqu’à niveau bas}
+	\For{(i:=liste.niveau \textbf{jusqu'à} 1)}{ 
+			\tcp*{Tant que la valeur du suivant du nœud courant est plus petite que la valeur Recherchée, on continue}	
+		\While{(x.suivant[i] < nouvelleValeur) }
+		{		
+			x := x.suivant[i]
+		}
+	x:=x.suivant[1]	\\
+	\tcp*{Mise à jours du pointeur courant x dans le tableau update}
+		update[i] := x 
+	}
+\tcp*{Si le nœud exite déjà dans la liste}
+	\If{(x = nouvelleValeur)}{ 		
+		x.value = nouvelleValeur
+	}
+\tcp*{L'insertion}
+	\Else{ 		
+		\tcp*{Créer une hauteur aléatoirement}
+		niveauAléatoire := randomLevel() \\
+		\If{(niveauAléatoire > liste.niveau)}{
+			\For{(i:= liste.niveau + 1 \textbf{jusqu'à} niveauAléatoire )}{
+				update[i] = liste.entete
+			}
+		\tcp*{Mettre à jour la hauteur de la liste}
+			liste.niveau = niveauAléatoire\\ 
+		}
+	\tcp*{Créer un nouvau nœud}
+		x := Créer nœud (niveauAléatoire, nouvelleValeur)  \\
+		\tcp*{Insertion du nouveau nœud et réarrangement des pointeurs.}
+		\For{(i:=1 \textbf{jusqu'à} niveauAléatoire)}{
+			x.suivant[i] = update[i].suivant[i]\\
+			update[i].suivant[i] := x		
+		}	
+	}						
+}	
+	\caption{Algorithme d’insertion}
+\end{algorithm}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Algorithme de suppression}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf {Commentaires} 
+\begin{enumerate}
+\item Pour supprimer une Clé il faut d’abord la chercher. On commence à parcourir les éléments à partir de l’entête de la sentinelle gauche du niveau le plus haut de la Skip list jusqu'au niveau le plus bas;
+
+\item Tant que la clé du nœud suivant est inférieure à la clé qu’on veut supprimer, ou nous sommes pas arrivés à la fin, on continue à avancer sur le même niveau; 
+
+\item Si la valeur de l’élément suivant est plus petite que la clé à supprimer, alors se placer sur cet élément suivant;
+
+\item Sinon on stock le pointeur dans le tableau update, et on descend d’un niveau s’il existe;
+
+\item On répète le même processus vu au point 2. Aller vers la droite puis vers le bas jusqu’à niveau le plus bas où on trouve la clé à supprimer;
+
+\item Si la clé à supprimer n'existe pas, arrêter et sortir du programme;
+
+\item Sinon on procède à la suppression comme suit:
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item On parcourt dans une boucle les niveaux allant du niveau le plus bas vers le plus haut, et on réajuste les pointeurs;
+	\item Supprimer le nœud souhaité;
+	\item Retirer les niveaux qui ne contiennent pas d’éléments comme suit: 
+	i) Tant que le niveau de la liste est strictement plus grand que 1, et le suivant de l'entête de list pointe vers NULL, on décrémente de 1 le niveau de la Skip list.
+\end{description}
+\end{enumerate}
+
+
+~\\
+Exemple de suppression du nœud (16) qui a la plus grande hauteur, avant :
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					Skip list suppression 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	\begin{tikzpicture}[
+		start chain,
+		every node/.style={font=\small},
+		item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+		label/.style={rectangle,minimum size=2mm},			
+		list/.style={rectangle split, rectangle split parts=2,
+			draw, rectangle split horizontal}, >=stealth			
+		]		
+		% The nodes of the Skip lists are drawn in a matrix
+		% \\ delimits the rows while & delimits the columns		
+		\matrix[row sep=4mm, column sep=6mm]{
+		% Row 5: -infini ... 16 ... +infifi
+		\node{$L_5$:}; & \snode{4a}{-\infty};  & & &\fill [red] (0.34,0.30) rectangle (-0.33,-0.3);  \snode{4d}{16}; & & & & & \snode{4i}{+\infty} ;\\	
+
+		% Row 4: 3 ... 50
+		\node{$L_4$:}; & \snode{3a}{-\infty};  &  \snode{3b}{5}; & &\fill [red] (0.34,0.30) rectangle (-0.33,-0.3);  \snode{3d}{16}; & & & \snode{3g}{31}; & & \snode{3i}{+\infty} ;\\					
+		
+		% Row 3: 3 ... 20 ... 50
+		\node {$L_3$:}; & \snode{2a}{-\infty}; & \snode{2b}{5};& &\fill [red] (0.34,0.30) rectangle (-0.33,-0.3);  \snode{2d}{16}; & & &\snode{2g}{31}; & & \snode{2i}{+\infty};\\			
+		
+		% Row 2: 3 ... 6 20 31 ... 50
+		\node {$L_2$:}; & \snode{1a}{-\infty}; &\snode{1b}{5}; & &\fill [red] (0.34,0.30) rectangle (-0.33,-0.3); \snode{1d}{16}; &\snode{1e}{20}; & &\snode{1g}{31}; & & \snode{1i}{+\infty};\\			
+		
+		% Row 1: 3 5 6 16 -20- 24 31 39 50
+		\node {$L_1$:}; & \snode{0a}{-\infty}; & \snode{0b}{5}; & \snode{0c}{6}; &\fill [red] (0.34,0.30) rectangle (-0.33,-0.3); \snode{0d}{16}; &\snode{0e}{20}; & \snode{0f}{24}; & \snode{0g}{31}; & \snode{0h}{39}; & \snode{0i}{+\infty};\\
+	};		
+		% Start chaining the nodes together
+		{
+			
+		%%%%%%%%%%%%% Ajout des  Fleches	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  	%------------------------ Horizontal chainage --------------------
+		%%%%%% 5eme niveau --------------------------------------------------					
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt,color=red] (4a) to node[pos=0.45,sloped]{{$X$}} (4d); 	
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt,color=red] (4d) to node[pos=0.45,sloped]{{$X$}} (4i); 
+\draw[ ->,blue] (4a) .. controls +(north:1.5em) and +(north:1.5em) .. (4i);	
+		%%%%%% 4eme niveau --------------------------------------------------					
+		\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (3a) to node {} (3b); 	
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt,color=red] (3b) to node[pos=0.45,sloped]{{$X$}} (3d); 
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt,color=red] (3d) to node[pos=0.45,sloped]{{$X$}} (3g); 
+\draw[ ->,blue] (3b) .. controls +(north:1.5em) and +(north:1.5em) .. (3g);
+		\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (3g) to node {} (3i); 
+		%%%%%% 3eme niveau --------------------------------------------------		
+		\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2a) to node {} (2b); 
+\draw[-stealth, shorten >= 0.1pt,color=red] (2b) to node[pos=0.45,sloped]{{$X$}} (2d);
+\draw[-stealth, shorten >= 0.1pt,color=red] (2d) to node[pos=0.45,sloped]{{$X$}} (2g);
+\draw[ ->,blue] (2b) .. controls +(north:1.5em) and +(north:1.5em) .. (2g);
+		\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2g) to node {} (2i); 
+		%			%%%%%% 2eme niveau --------------------------------------------------		
+		\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1a) to node {} (1b);
+\draw[-stealth, shorten >= 0.1pt,color=red] (1b) to node[pos=0.45,sloped]{{$X$}} (1d);
+\draw[-stealth, shorten >= 0.1pt,color=red] (1d) to node[pos=0.45,sloped]{{$X$}} (1e);
+\draw[ ->,blue] (1b) .. controls +(north:1.5em) and +(north:1.5em) .. (1e);
+		\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1e) to node {} (1g);
+		\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1g) to node {} (1i);			
+		%			%%%%%% 1er niveau --------------------------------------------------	
+		\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 			
+		\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 
+\draw[-stealth, shorten >= 0.1pt,color=red] (0c) to node[pos=0.45,sloped]{{$X$}} (0d);
+\draw[-stealth, shorten >= 0.1pt,color=red] (0d) to node[pos=0.45,sloped]{{$X$}} (0e);
+\draw[ ->,blue] (0c) .. controls +(north:1.5em) and +(north:1.5em) .. (0e);
+		\draw[ -stealth, shorten >= 0pt] (0e) to node {} (0f);
+		\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g);
+		\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h);
+		\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i);
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  		
+%------------------------ Vertical chainage---------------------------------
+		%%%%%% 1er noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (4a) to node {} (3a); 
+		\draw[ -stealth, shorten >= 0pt] (3a) to node {} (2a); 
+		\draw[ -stealth, shorten >= 0pt] (2a) to node {} (1a); 
+		\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a); 
+		%%%%%% 2eme noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (3b) to node {} (2b); 
+		\draw[ -stealth, shorten >= 0pt] (2b) to node {} (1b); 
+		\draw[ -stealth, shorten >= 0pt] (1b) to node {} (0b); 
+		%%%%%% 4eme noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (4d) to node {} (3d);
+		\draw[ -stealth, shorten >= 0pt] (3d) to node {} (2d); 			 
+		\draw[ -stealth, shorten >= 0pt] (2d) to node {} (1d); 
+		\draw[ -stealth, shorten >= 0pt] (1d) to node {} (0d); 
+		%%%%%% 5eme noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (1e) to node {} (0e);
+		%%%%%% 7eme noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (3g) to node {} (2g);
+		\draw[ -stealth, shorten >= 0pt] (2g) to node {} (1g);
+		\draw[ -stealth, shorten >= 0pt] (1g) to node {} (0g);
+		%%%%%% 9eme noeaud --------------------------------------------------				
+		\draw[ -stealth, shorten >= 0pt] (3i) to node {} (2i);
+		\draw[ -stealth, shorten >= 0pt] (2i) to node {} (1i);
+		\draw[ -stealth, shorten >= 0pt] (1i) to node {} (0i);
+		}
+		\textbf{}	
+	\end{tikzpicture}			
+\captionof{figure}{Localisation de la clé 16 avant la suppression.}
+\caption*{ \small Source: \textit{Repéré sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+\begin{center}	
+Après la suppression du nœud (16) :
+~\\
+$\Downarrow$ $\Downarrow$ $\Downarrow$	
+~\\
+		 
+	\begin{tikzpicture}[
+	start chain,
+	every node/.style={font=\small},
+	item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+	label/.style={rectangle,minimum size=2mm},			
+	list/.style={rectangle split, rectangle split parts=2,
+		draw, rectangle split horizontal}, >=stealth			
+	]		
+	% The nodes of the Skip lists are drawn in a matrix
+	% \\ delimits the rows while & delimits the columns
+	\matrix[row sep=4mm, column sep=8mm]{
+		% Row 4: 3 ... 50
+		\node{$L_4$:}; & \snode{3a}{-\infty};  &  \snode{3b}{5}; & & & & \snode{3f}{31}; & & \snode{3h}{+\infty} ;\\					
+		
+		% Row 3: 3 ... 20 ... 50
+		\node {$L_3$:}; & \snode{2a}{-\infty}; & \snode{2b}{5};& & & &\snode{2f}{31}; & & \snode{2h}{+\infty};\\			
+		
+		% Row 2: 3 ... 6 20 31 ... 50
+		\node {$L_2$:}; & \snode{1a}{-\infty}; &\snode{1b}{5}; & &\snode{1d}{20}; & &\snode{1f}{31}; & & \snode{1h}{+\infty};\\			
+		
+		% Row 1: 3 5 6 16 -20- 24 31 39 50
+		\node {$L_1$:}; & \snode{0a}{-\infty}; & \snode{0b}{5}; & \snode{0c}{6}; &\snode{0d}{20}; & \snode{0e}{24}; & \snode{0f}{31}; & \snode{0g}{39}; & \snode{0h}{+\infty};\\
+	};		
+	% Start chaining the nodes together
+	{		
+		%%%%%%%%%%%%% Ajout des  Fleches	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  	%------------------------ Horizontal chainage --------------------
+		%%%%%% 4eme niveau --------------------------------------------------					
+		\draw[ -stealth, shorten >= 0pt] (3a) to node {} (3b); 	
+		\draw[ -stealth, shorten >= 0pt, color=blue] (3b) to node {} (3f); 
+		\draw[ -stealth, shorten >= 0pt] (3f) to node {} (3h); 
+		%%%%%% 3eme niveau --------------------------------------------------		
+		\draw[-stealth, shorten >= 0pt] (2a) to node{} (2b); 
+		\draw[-stealth, shorten >= 0pt, color=blue] (2b) to node{} (2f);
+		\draw[-stealth, shorten >= 0pt] (2f) to node{} (2h);
+		%			%%%%%% 2eme niveau --------------------------------------------------		
+		\draw[ -stealth, shorten >= 0pt] (1a) to node {} (1b);
+		\draw[ -stealth, shorten >= 0pt, color=blue] (1b) to node {} (1d);
+		\draw[ -stealth, shorten >= 0pt] (1d) to node {} (1f);		
+		\draw[ -stealth, shorten >= 0pt] (1f) to node {} (1h);		
+		%			%%%%%% 1er niveau --------------------------------------------------	
+		\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 
+		\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 
+		\draw[ -stealth, shorten >= 0pt, color=blue] (0c) to node {} (0d); 
+		\draw[ -stealth, shorten >= 0pt] (0d) to node {} (0e); 
+		\draw[ -stealth, shorten >= 0pt] (0e) to node {} (0f); 
+		\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 
+		\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  		
+		%------------------------ Vertical chainage---------------------------------
+		%%%%%% 1er noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (3a) to node {} (2a); 			
+		\draw[ -stealth, shorten >= 0pt] (2a) to node {} (1a); 			
+		\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a); 			
+		%%%%%% 2eme noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (3b) to node {} (2b); 			
+		\draw[ -stealth, shorten >= 0pt] (2b) to node {} (1b); 			
+		\draw[ -stealth, shorten >= 0pt] (1b) to node {} (0b); 			
+		%%%%%% 4eme noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (1d) to node {} (0d); 			
+		%%%%%% 5eme noeaud --------------------------------------------------
+%		\draw[ -stealth, shorten >= 0pt] (1e) to node {} (0e); 			
+%		%%%%%% 6eme noeaud --------------------------------------------------
+		\draw[ -stealth, shorten >= 0pt] (3f) to node {} (2f);
+		\draw[ -stealth, shorten >= 0pt] (2f) to node {} (1f);
+		\draw[ -stealth, shorten >= 0pt] (1f) to node {} (0f);
+%		%%%%%% 8eme noeaud --------------------------------------------------				
+		\draw[ -stealth, shorten >= 0pt] (3h) to node {} (2h);
+		\draw[ -stealth, shorten >= 0pt] (2h) to node {} (1h);
+		\draw[ -stealth, shorten >= 0pt] (1h) to node {} (0h);
+		----------------------------------------------			
+	}
+	\textbf{}	
+\end{tikzpicture} 
+\captionof{figure}{Suppression de la clé 16, et mise à jours des pointeurs.}
+\caption*{ \small Source: \textit{Repéré sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+~\\
+\textbf {Pseudo code d'algorithme de suppression} \medskip  \\
+\begin{algorithm}[H]
+	\DontPrintSemicolon	
+	\KwInput{(Skip list liste, Entier CléÀSupprimer)}
+	\KwOutput{Skip list Liste}
+	\Begin{
+	Création du tableau update [1 ... Maxlevel] \\
+	x := liste.entete \\
+	\tcp*{Parcourir les niveaux de la liste en partant du niveau haut jusqu'au niveau bas}
+	\For{(i:=liste.niveau \textbf{jusqu'à} 1)}{ 
+				\tcp*{Tant que la clé du suivant du nœud courant est plus petite que la clé Recherchée, on continue}	
+		\While{(x.suivant[i] < nouvelleValeur) }
+		{		
+			x := x.suivant[i]
+		}
+				\tcp*{mise à jours du pointeur courant x dans le tableau update}
+		update[i] := x 
+	}
+	x:=x.suivant[1]
+					\tcp*{La suppression de la clé clé à supprimer}
+	\If{(x.clé = CléÀSupprimer)}{ 
+		\tcp*{commencer au niveau le plus bas et réajuster les pointeurs pour supprimer le nœud souhaité}
+		\For{(i:=1 \textbf{jusqu'à} liste.niveau)}{
+							\tcp*{Si l'élément suivant n'est pas le bon, quitter la boucle }
+			\If{(update[i].suivant[i] != x)} {	break }	
+			\tcp*{Supprimer x du tableau des niveaux}		
+			update[i].suivant[i] := x.suivant[i]\\
+			\tcp*{Suppression}
+			free(x) \\
+							\tcp*{Retirer les niveaux qui ne contiennent pas d’éléments}
+			\While {(liste.level > 1) and (list.entete.suivant[liste.niveau] = NULL)}{
+				\tcp*{decrementer la liste des hauteurs}
+				liste.niveau := liste.niveau – 1	
+			}
+		}
+	}
+}
+	\caption{Algorithme de Suppression}
+\end{algorithm}
+
+\newpage
+
+ \section{Analyses}
+ \subsection{Skip lists uniformes} 
+ \textbf {Coût de la recherche} \\
+Prenons l'exemple suivant qui représente une Skip List formée de deux listes chaînées $L_1$ et $L_2$, tous les éléments de $L_2$ sont répartis d'une manière \textbf{uniforme} comme le montre la figure 10. c'est ce qu'on appelle \textbf{Une Skip list uniforme}. 
+Pour chercher un élément donné on parcoure la liste du haut $L_2$ et on parcours seulement une partie de la liste du bas $L_1$, on peut avoir un coût de recherche égal approximativement à |$L_1$| dans le pire des cas. \\Et donc le coût de recherche est \cite{ArticleSchwar}:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Skip lists uniforme de base avec deux listes chaînées
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+	\begin{tikzpicture}[
+		start chain,
+		every node/.style={font=\small},
+		item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+		label/.style={rectangle,minimum size=2mm},			
+		list/.style={rectangle split, rectangle split parts=2,
+			draw, rectangle split horizontal}, >=stealth			
+		]		
+		% The nodes of the Skip lists are drawn in a matrix
+		% \\ delimits the rows while & delimits the columns
+		\matrix[row sep=3mm, column sep=5mm]{			
+			% Row 2: 3 ... 6 20 31 ... 50
+			\node {$L_2$:}; & \snode{1a}{-\infty}; && \snode{1c}{6}; && \snode{1e}{20}; && \snode{1g}{31}; && \snode{1i}{+\infty};\\			
+			% Row 1: 3 5 6 16 -20- 24 31 39 50
+			\node {$L_1$:}; & \snode{0a}{-\infty}; & \snode{0b}{5}; & \snode{0c}{6}; & \snode{0d}{16}; & \snode{0e}{20}; & \snode{0f}{24}; & \snode{0g}{31}; & \snode{0h}{39}; & \snode{0i}{+\infty};\\
+		};		
+		% Start chaining the nodes together
+		{
+			% Horizontal chains
+			[start chain] 
+			\color{black}\chainin(0a); 
+			\color{black}\chainin(0b) [join]; \color{black}\chainin(0c) [join]; 						
+			\color{black}\chainin(0d) [join]; \color{black}\chainin(0e) [join]; \color{black}\chainin(0f) [join]; \color{black}\chainin(0g) [join]; \color{black}\chainin(0h) [join]; \color{black}\chainin(0i) [join];
+			
+			[start chain] \color{black}\chainin(1a); \color{black}\chainin(1c) [join]; \color{black}\chainin(1e) [join]; \color{black}\chainin(1g) [join]; \color{black}\chainin(1i) [join];			
+			%%%%%%%%%%%%% Ajout des  Fleches	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+			% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+			%------------------------ Horizontal chainage ------------------------
+			%%%%%% 1er niveau --------------------------------------------------	
+			\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 			
+			\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 			
+			\draw[ -stealth, shorten >= 0pt] (0c) to node {} (0d); 				
+			\draw[ -stealth, shorten >= 0pt] (0d) to node {} (0e); 			
+			\draw[ -stealth, shorten >= 0pt] (0e) to node {} (0f); 			
+			\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 			
+			\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 			
+			\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i); 			
+			%%%%%% 2eme niveau --------------------------------------------------		
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1a) to node {} (1c); 			
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1c) to node {} (1e); 			
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1e) to node {} (1g); 				
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1g) to node {} (1i); 				
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+			%------------------------ Vertical chainage---------------------------
+			%%%%%% 1er noeaud --------------------------------------------------		
+			\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a); 			
+			%%%%%% 3eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (1c) to node {} (0c); 			
+			%%%%%% 5eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (1e) to node {} (0e); 			
+			%%%%%% 7eme noeaud --------------------------------------------------
+			\draw[ -stealth, shorten >= 0pt] (1g) to node {} (0g);
+			%%%%%% 9eme noeaud --------------------------------------------------						
+			\draw[ -stealth, shorten >= 0pt] (1i) to node {} (0i); 						
+		}
+		\textbf{}		
+		
+	\end{tikzpicture}
+\captionof{figure}{Skip list uniforme avec deux listes chaînées.}
+\caption*{ \small Source: \textit{Repéré sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+~\\
+
+\hypertarget{depart4}{\hyperlink{Coût de recherche}{}}
+\begin{proof}
+\begin{equation}		
+	\begin{aligned}
+		\text{Coût de la recherche au pire cas} & =  |L_2| + \dfrac{|L_1|}{|L_2|} \nonumber \\	
+	\end{aligned}	
+\end{equation}
+Et notre objectif de minimisation, est atteint quand:
+\begin{equation}		
+	\begin{aligned}
+		|L_2| & = \dfrac{|L_1|}{|L_2|}\nonumber \\
+		|L_2|^2 & = |L_1| = n \nonumber \\		
+		|L_2| & = \sqrt{n} \nonumber \\
+		\text{Donc, le coût de la recherche} & =  2.\sqrt{n} \nonumber \\	
+	\end{aligned}	
+\end{equation}
+\end{proof}
+
+
+~\\
+ 
+\textbf {Généralisation} \medskip \\
+Toujours dans le cadre de l'amélioration du coût de la recherche, maintenant on ajoute d'autres niveaux, \textit{i.e.}, d'autres listes en haut de nos deux listes chaînées de départ, figure 10.
+
+~\\
+ 
+\textbf {Hypothèse} \medskip \\
+ Supposons que tous les éléments sont parfaitement répartie sur les listes du haut comme le montre la figure 10. Cette Hypothèse disparaîtra après dans le cas des analyses des Skip lists aléatoires, car il va falloir lancer une pièce de monnaie pour déterminer la hauteur.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					Skip lists uniforme 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+ \begin{tikzpicture}[
+   	start chain,
+   	every node/.style={font=\small},
+	item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+	label/.style={rectangle,minimum size=2mm},			
+	list/.style={rectangle split, rectangle split parts=2,
+	draw, rectangle split horizontal}, >=stealth			
+	]		
+% The nodes of the Skip lists are drawn in a matrix
+% \\ delimits the rows while & delimits the columns
+\matrix[row sep=4mm, column sep=5mm]{
+% Row 4: 3 ... 50
+\node {$L_4$:}; & \snode{3a}{-\infty}  ; & & & & & & & & \snode{3i}{+\infty} ;\\					
+% Row 3: 3 ... 20 ... 50
+\node {$L_3$:}; & \snode{2a}{-\infty}; & & & & \snode{2e}{20}; & & & & \snode{2i}{+\infty};\\			
+% Row 2: 3 ... 6 20 31 ... 50
+\node {$L_2$:}; & \snode{1a}{-\infty}; && \snode{1c}{6}; && \snode{1e}{20}; && \snode{1g}{31}; && \snode{1i}{+\infty};\\			
+% Row 1: 3 5 6 16 -20- 24 31 39 50
+\node {$L_1$:}; & \snode{0a}{-\infty}; & \snode{0b}{5}; & \snode{0c}{6}; & \snode{0d}{16}; & \snode{0e}{20}; & \snode{0f}{24}; & \snode{0g}{31}; & \snode{0h}{39}; & \snode{0i}{+\infty};\\
+};		
+% Start chaining the nodes together
+{
+% Horizontal chains
+[start chain] 
+\color{black}\chainin(0a); 
+\color{black}\chainin(0b) [join]; \color{black}\chainin(0c) [join]; 						
+\color{black}\chainin(0d) [join]; \color{black}\chainin(0e) [join]; \color{black}\chainin(0f) [join]; \color{black}\chainin(0g) [join]; \color{black}\chainin(0h) [join]; \color{black}\chainin(0i) [join];
+			
+[start chain] \color{black}\chainin(1a); \color{black}\chainin(1c) [join]; \color{black}\chainin(1e) [join]; \color{black}\chainin(1g) [join]; \color{black}\chainin(1i) [join];
+[start chain] \color{black}\chainin(2a); \color{black}\chainin(2e) [join]; \color{black}\chainin(2i) [join];
+			
+[start chain] \color{black}\chainin(3a); \color{black}\chainin(3i) [join] ;
+			
+%%%%%%%%%%%%% Ajout des  Fleches	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%------------------------ Horizontal chainage ---------------------------------
+%%%%%% 1er niveau --------------------------------------------------	
+\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 			
+\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 			
+\draw[ -stealth, shorten >= 0pt] (0c) to node {} (0d); 				
+\draw[ -stealth, shorten >= 0pt] (0d) to node {} (0e); 			
+\draw[ -stealth, shorten >= 0pt] (0e) to node {} (0f); 			
+\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 			
+\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 			
+\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i); 			
+%%%%%% 2eme niveau --------------------------------------------------		
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1a) to node {} (1c); 			
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1c) to node {} (1e); 			
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1e) to node {} (1g); 				
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1g) to node {} (1i); 	
+	
+%%%%%% 3eme niveau --------------------------------------------------		
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2a) to node {} (2e); 			
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2e) to node {} (2i); 				
+		
+%%%%%% 4eme niveau --------------------------------------------------		
+\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (3a) to node {} (3i); 	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%------------------------ Vertical chainage---------------------------------
+%%%%%% 1er noeaud --------------------------------------------------
+\draw[ -stealth, shorten >= 0pt] (3a) to node {} (2a); 			
+\draw[ -stealth, shorten >= 0pt] (2a) to node {} (1a); 			
+\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a); 			
+%%%%%% 3eme noeaud --------------------------------------------------
+\draw[ -stealth, shorten >= 0pt] (1c) to node {} (0c); 			
+%%%%%% 5eme noeaud --------------------------------------------------
+\draw[ -stealth, shorten >= 0pt] (2e) to node {} (1e); 			
+\draw[ -stealth, shorten >= 0pt] (1e) to node {} (0e); 			
+%%%%%% 7eme noeaud --------------------------------------------------
+\draw[ -stealth, shorten >= 0pt] (1g) to node {} (0g);
+%%%%%% 9eme noeaud --------------------------------------------------				
+\draw[ -stealth, shorten >= 0pt] (3i) to node {} (2i); 			
+\draw[ -stealth, shorten >= 0pt] (2i) to node {} (1i); 			
+\draw[ -stealth, shorten >= 0pt] (1i) to node {} (0i); 			
+
+}
+		
+\end{tikzpicture}
+\captionof{figure}{Skip lists uniforme cas général.}
+\caption*{ \small Source: \textit{Repéré sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+~\\ 
+
+\newtcbtheorem{slantedtheorem}{Rappel}{colback=white!20!white,colbacktitle={white!40!white},
+	coltitle={black},fontupper=\slshape,fonttitle={\slshape}}{sltheo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slantedtheorem}{\hyperlink{depart5}{\hypertarget{Rappel1}{Identités logarithmiques}}}{ohmy}
+ - $\forall$r  $\in$ $\mathbb{R}$, $\log_a(a^r) = r $ \\
+ Pour (a, b) strictement positifs, on a : \\
+ - $\log_a b = \dfrac{1}{\log_b a} $\\
+ - $ a^{\log_a b} = b $ 
+\end{slantedtheorem}	
+  
+  ~\\
+ On a vu précédemment \hyperlink{depart4}{\hypertarget{Coût de la recherche}{le coût de la recherche}}:\\
+ Pour 2 niveaux de la Skip lists on a  $\Longrightarrow$ $|L_2| = 2.\sqrt[2]{n}$ , et donc, \\
+ Pour 3 niveaux de la Skip lists on a  $\Longrightarrow$ $|L_3| = 3.\sqrt[3]{n}$ \\
+ … et ainsi de suite ... \\
+ Pour k-éme niveaux de la Skip lists on a $\Longrightarrow$ $|L_k| = k.\sqrt[k]{n}$ \\
+ Pour $\log_2 n$\footnote{$\log_2 n$ comme hauteur a pour but de comparer les Skip lists avec les ABR équilibrés } niveaux de la Skip lists on a \\
+ $\Longrightarrow$ $|L_{\log_2 n}| = \log_2 n.\sqrt[\log_2 n]{n} = \log_2 n.n^{\dfrac{1}{\log_2 n}} $ 
+ 
+ \begin{proof}
+ 	\begin{equation} 
+ 		\begin{aligned}
+ |L_{\log_2 n}| & = \log_2 n * n^{\dfrac{1}{\log_2 n}} \nonumber \\
+& = \log_2 n*n^{\log_n 2}  \nonumber \\
+& = 2*\log_2 n \nonumber \\
+& \approx \mathcal{O}(\log n) 
+ 		\end{aligned}
+ 	\end{equation}
+ \end{proof}
+
+~\\
+ 
+ \subsection{Skip lists aléatoires} 
+Une Skip list aléatoire comme la montre la figure 13, a des éléments répartis au hasard sur les niveaux supérieurs, c'est parce que la fonction d'insertion des éléments contient une boucle où on lance une pièce d’argent, si on a une face alors promouvoir x sinon on s'arrête, et on ajoute cet élément.
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %					Skip lists aléatoire 
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{center}
+  	\begin{tikzpicture}[
+  		start chain,
+  		every node/.style={font=\small},
+  		item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+  		label/.style={rectangle,minimum size=2mm},			
+  		list/.style={rectangle split, rectangle split parts=2,
+  			draw, rectangle split horizontal}, >=stealth			
+  		]		
+  		% The nodes of the Skip lists are drawn in a matrix
+  		% \\ delimits the rows while & delimits the columns
+  		\matrix[row sep=3mm, column sep=5mm]{
+  			% Row 4: 3 ... 50
+  			\node {$L_4$:}; & \snode{3a}{-\infty}; &\snode{3b}{5}; & & & & &\snode{3g}{31}; & & \snode{3i}{+\infty};\\					
+  			% Row 3: 3 ... 20 ... 50
+  			\node {$L_3$:}; & \snode{2a}{-\infty}; & \snode{2b}{5};& &\snode{2d}{16}; & & &\snode{2g}{31}; & & \snode{2i}{+\infty};\\			
+  			% Row 2: 3 ... 6 20 31 ... 50
+  			\node {$L_2$:}; & \snode{1a}{-\infty}; &\snode{1b}{5}; & &\snode{1d}{16}; & \snode{1e}{20}; & &\snode{1g}{31}; & & \snode{1i}{+\infty};\\			
+  			% Row 1: 3 5 6 16 -20- 24 31 39 50
+  			\node {$L_1$:}; & \snode{0a}{-\infty}; & \snode{0b}{5}; & \snode{0c}{6}; & \snode{0d}{16}; & \snode{0e}{20}; & \snode{0f}{24}; & \snode{0g}{31}; & \snode{0h}{39}; & \snode{0i}{+\infty};\\
+  		};		
+  		% Start chaining the nodes together
+  		{
+  			
+  			%%%%%%%%%%%%% Ajout des  Fleches	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  			% source : https://tex.stackexchange.com/questions/497801/include-arrow-in-tikzpicture
+  			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  			%------------------------ Horizontal chainage --------------------------
+  			%%%%%% 4eme niveau --------------------------------------------------		
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (3a) to node {} (3b); 	
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (3b) to node {} (3g); 
+   			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (3g) to node {} (3i);  			
+  			%%%%%% 3eme niveau --------------------------------------------------		
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2a) to node {} (2b); 
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2b) to node {} (2d); 
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2d) to node {} (2g); 
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (2g) to node {} (2i); 
+  			%%%%%% 2eme niveau --------------------------------------------------		
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1a) to node {} (1b);
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1b) to node {} (1d);
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1d) to node {} (1e);
+  			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1e) to node {} (1g);
+			\draw[ -stealth, shorten <= 0pt, shorten >= 0pt] (1g) to node {} (1i);
+  			
+  			%%%%%% 1er niveau --------------------------------------------------	
+  			\draw[ -stealth, shorten >= 0pt] (0a) to node {} (0b); 			
+  			\draw[ -stealth, shorten >= 0pt] (0b) to node {} (0c); 			
+  			\draw[ -stealth, shorten >= 0pt] (0c) to node {} (0d); 				
+  			\draw[ -stealth, shorten >= 0pt] (0d) to node {} (0e); 			
+  			\draw[ -stealth, shorten >= 0pt] (0e) to node {} (0f); 			
+  			\draw[ -stealth, shorten >= 0pt] (0f) to node {} (0g); 			
+  			\draw[ -stealth, shorten >= 0pt] (0g) to node {} (0h); 			
+  			\draw[ -stealth, shorten >= 0pt] (0h) to node {} (0i); 			
+  			
+  			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	  			
+  			%------------------------ Vertical chainage---------------------------------
+  			%%%%%% 1er noeaud --------------------------------------------------
+  			\draw[ -stealth, shorten >= 0pt] (3a) to node {} (2a); 			
+  			\draw[ -stealth, shorten >= 0pt] (2a) to node {} (1a); 			
+  			\draw[ -stealth, shorten >= 0pt] (1a) to node {} (0a); 			
+  			%%%%%% 2eme noeaud --------------------------------------------------
+  			\draw[ -stealth, shorten >= 0pt] (3b) to node {} (2b); 			
+  			\draw[ -stealth, shorten >= 0pt] (2b) to node {} (1b); 			
+  			\draw[ -stealth, shorten >= 0pt] (1b) to node {} (0b); 			
+  			%%%%%% 4eme noeaud --------------------------------------------------
+  			\draw[ -stealth, shorten >= 0pt] (2d) to node {} (1d); 			
+  			\draw[ -stealth, shorten >= 0pt] (1d) to node {} (0d); 			
+  			%%%%%% 5eme noeaud --------------------------------------------------
+  			\draw[ -stealth, shorten >= 0pt] (1e) to node {} (0e); 			
+  			%%%%%% 7eme noeaud --------------------------------------------------
+  			\draw[ -stealth, shorten >= 0pt] (3g) to node {} (2g); 			
+			\draw[ -stealth, shorten >= 0pt] (2g) to node {} (1g); 			
+  			\draw[ -stealth, shorten >= 0pt] (1g) to node {} (0g);
+  			%%%%%% 9eme noeaud --------------------------------------------------				
+  			\draw[ -stealth, shorten >= 0pt] (3i) to node {} (2i); 			
+  			\draw[ -stealth, shorten >= 0pt] (2i) to node {} (1i); 			
+  			\draw[ -stealth, shorten >= 0pt] (1i) to node {} (0i); 			
+  			
+  		}
+  		\textbf{}		
+  		
+  \end{tikzpicture}
+  \captionof{figure}{Une Skip list aléatoire.}
+  \caption*{Source: \textit{Code repéré sur github.com via  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ce lien}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+  
+
+\subsection {La hauteur} 
+Intéressons-nous maintenant à la hauteur moyenne h de la Skip list.\\
+D’après l’algorithme d’insertion, chaque fois qu’on veut insérer un nœud dans la Skip list, on appelle la fonction \textbf{random()} qui renvoie une valeur aléatoire appartenant à l’intervalle [0,1], si on a :\\
+- pile, c’est la probabilité d'une réussite qui vaut (1-p) ;\\
+- face, c’est la probabilité d'un échec qui vaut (p).
+ 
+~\\
+\textbf {Question:} En combien de lancers de pièces équilibrées, allons-nous promouvoir un élément ? 
+
+~\\
+	
+\begin{slantedtheorem}{Rappel sur les Séries géométriques}{ohmy}						
+On sait pour une série géométrique convergente réelle, avec une raison p $\in \nbR$, $|p| < 1$, sa somme vaut $\footnote{Source : fr.wikipedia.org/wiki/Série\_géométrique}$:
+
+\[  \sum \limits_{i=0}^{+\infty} p^i = \dfrac{1}{1-p} \] 
+Donc, on peut en déduire la somme suivante : \\
+$  ( 1p^0 + 2p^1 + 3p^2 + 4p^3 + … ) =  \nonumber \\
+\hspace*{0cm} [ (1p^0 + p^1 \hspace*{0.2cm} + p^2 \hspace*{0.2cm} + p^3 + ....)\nonumber \\	
+\hspace*{0.8cm} ( + p^1 \hspace*{0.2cm} + p^2 \hspace*{0.2cm} + p^3 + .... ) \nonumber \\	
+\hspace*{1.8cm} (    + p^2 \hspace*{0.2cm} + p^3 + .... ) \nonumber \\		
+\hspace*{2.9cm} (         + p^3 + .... ) \nonumber \\	
+\hspace*{3.5cm}       ................... ] \nonumber \\	
+( 1p^0 + 2p^1 + 3p^2 + 4p^3 + … ) =  \nonumber \\
+p^0( p^0 + p^1 + p^2 + p^3 + ....) + p^1( p^0 + p^1 + p^2 + .... ) + p^2( p^0 + p^1 + .... ) + ...... \nonumber \\
+$			
+Donc,\\ $ ( 1p^0 + 2p^1 + 3p^2 + 4p^3 + … ) = p^0( \dfrac{1}{1-p} ) + p^1( \dfrac{1}{1-p} ) + p^2( \dfrac{1}{1-p} ) + ... \nonumber \\
+= ( \dfrac{1}{1-p} )  (1p^0 + 2p^1 + 3p^2 + 4p^3 + …  )\nonumber \\
+= ( \dfrac{1}{1-p} )^2
+$
+\end{slantedtheorem}
+
+~\\
+\textbf {Réponse:}
+\begin{proof}
+~\\	\\
+\text{En moyenne le nombre attendu de lancers d'une pièce équilibrée, jusqu'à ce qu’on retrouve face va être }\\
+\text{la sommation suivante :} \\ \\
+Niveau 1 : lancer la pièce 1 fois => 0 échec p et 1 réussite (1-p) \\
+Niveau 2 : lancer la pièce 2 fois => 1 échecs p et 1 réussites (1-p) \\
+Niveau 3 : lancer la pièce 3 fois => 2 échecs p et 1 réussites (1-p) \\
+... \\
+Niveau h : lancer la pièces h fois => (h-1) échecs p et 1 réussites (1-p) \\ \\
+Donc en moyenne le nombre de lancers de pièce est l'espérance $E(x_j)$, $x_j$ est le
+nombre de lancers de pièce attendus jusqu'à ce qu'on trouve pile, c'est la sommation de : \\
+(1-p) si on a pile dès le premier coup, donc ça sera une fois, \\ 
+et puis deux fois (2) : une fois face (p), et une fois pile (1-p), \\
+et puis trois fois (3) : deux fois face $(p^2)$, et une fois pile (1-p), 
+\textit{etc}. \\
+Et donc l'espérance $E(x_j)$ va être la sommation suivante :
+nombre de lancers de pièce attendus jusqu'à ce qu'on trouve pile :		
+\begin{equation} 
+	\begin{aligned}
+		E(x_j) & = [ (1-p) + 2p^1 (1-p) + 3p^2(1-p)+ … ] \nonumber \\
+& = [ (1-p) + 2p^1 (1-p) + 3p^2(1-p)+ … ] \nonumber \\
+& = (1-p) * ( 1p^0 + 2p^1 + 3p^2 + 4p^3 + … ) \nonumber \\
+& = (1-p) * (\dfrac{1}{1-p})^2  \nonumber \\
+& = \dfrac{1}{1-p} \nonumber \\
+\end{aligned}
+\end{equation}
+\end{proof}
+Donc en moyenne la hauteur de chaque nœud est $\dfrac{1}{1-p}$
+\\[1cm]
+\textbf {La probabilité pour dépasser la hauteur h}\medskip \\
+La probabilité qu'une Skip list avec n nœuds ait une hauteur au moins h est : \medskip \\
+\begin{equation} 
+	\begin{aligned}
+		p^h.[ (1-p) + 2p^1 (1-p) + 3p^2(1-p)+ … ] & = p^h.(1-p).\dfrac{1}{1-p} \nonumber \\
+		& = p^h
+	\end{aligned}
+\end{equation}
+Donc la probabilité pour qu'un nœud de la Skip list ait la hauteur au moins h c'est $p^h$. \\
+\\[1cm]
+\textbf {La probabilité pour une Skip list de n nœuds ait une hauteur d'au moins h}
+
+
+\begin{center}
+	\begin{tikzpicture}[
+		start chain,
+		every node/.style={font=\small},
+		item/.style={rectangle,minimum height=6mm,minimum width=6mm,draw=black},			
+		label/.style={rectangle,minimum size=2mm},			
+		list/.style={rectangle split, rectangle split parts=2,
+			draw, rectangle split horizontal}, >=stealth			
+	]		
+	% The nodes of the Skip lists are drawn in a matrix
+	% \\ delimits the rows while & delimits the columns
+	\matrix[row sep=4mm, column sep=10mm]{			
+\snode{5a}{-\infty}; & & & &\snode{5e}{48}; & & & &\snode{5i}{+\infty}; \\	
+
+\snode{4a}{-\infty}; & & & & & & \snode{4g}{91}; &&\snode{4i}{+\infty};  \\	
+
+\snode{3a}{-\infty}; & &\snode{3c}{7}; & & & & & &\snode{3i}{+\infty}; \\	
+
+\snode{2a}{-\infty}; &\snode{2b}{3};  & & & & & & &\snode{2i}{+\infty}; \\
+
+ & & & & & & & & \\
+ 
+\snode{0a}{-\infty}; & \snode{0b}{3}; & \snode{0c}{7}; &  & \snode{0e}{48}; & & \snode{0g}{91}; & &\snode{0i}{+\infty};\\
+	};		
+
+	{
+	% -----------------   Horizontal chainage -----------
+\draw[-stealth, shorten >=0pt] (5a.east) --node[pos=.5,fill=white,inner sep=1pt]{.   .   .   .   .   .   .   .   .   .} (5e);	
+\draw[-stealth, shorten >=0pt] (5e.east) --node[pos=.5,fill=white,inner sep=1pt]{.   .   .   .   .   .   .   .   .   .} (5i);	
+\draw[-stealth, shorten >=0pt] (4a.east) --node[pos=.5,fill=white,inner sep=1pt]{.   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . } (4g);
+\draw[-stealth, shorten >=0pt] (4g.east) --node[pos=.5,fill=white,inner sep=1pt]{...} (4i);	
+\draw[-stealth, shorten >= 0pt] (3a) to node{} (3c);	
+\draw[-stealth, shorten >=0pt] (3c.east) --node[pos=.5,fill=white,inner sep=1pt]{.   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .} (3i);
+\draw[-stealth, shorten >= 0pt] (2a) to node{} (2b);	
+\draw[-stealth, shorten >= 0pt] (2b.east) --node[pos=.5,fill=white,inner sep=1pt]{.   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .} (2i);
+
+	\draw[-stealth, shorten >= 0pt] (0a) to node{} (0b);
+	\draw[-stealth, shorten >= 0pt] (0b) to node{} (0c);
+	\draw[-stealth, shorten >=0pt] (0c.east) --node[pos=.5,fill=white,inner sep=1pt]{...} (0e);	
+	\draw[-stealth, shorten >=0pt] (0e.east) --node[pos=.5,fill=white,inner sep=1pt]{...} (0g);	
+	\draw[-stealth, shorten >=0pt] (0g.east) --node[pos=.5,fill=white,inner sep=1pt]{...} (0i);	
+					
+% -------------------- Fleche hauteur ---------------
+	
+\draw[-stealth, shorten <= 0pt] (0b.north) --node[pos=.5,fill=white,inner sep=1pt]{\Large$h_1$} (2b);
+\draw[-stealth, shorten <= 0pt] (2b.south) --node[pos=.5,fill=white,inner sep=1pt]{\Large$h_1$} (0b);
+
+\draw[-stealth, shorten <= 0pt] (0c.north) --node[pos=.4,fill=white,inner sep=1pt]{\Large$h_2$} (3c);
+\draw[-stealth, shorten <= 0pt] (3c.south) --node[pos=.6,fill=white,inner sep=1pt]{\Large$h_2$} (0c);
+
+\draw[-stealth, shorten <= 0pt, color=blue] (0e.north) --node[pos=.4,fill=white,inner sep=1pt]{\Large$h_i$} (5e);
+\draw[-stealth, shorten <= 0pt, color=blue] (5e.south) --node[pos=.6,fill=white,inner sep=1pt]{\Large$h_i$} (0e);
+
+\draw[-stealth, shorten <= 0pt] (0g.north) --node[pos=.6,fill=white,inner sep=1pt]{\Large$h_n$} (4g);
+\draw[-stealth, shorten <= 0pt] (4g.south) --node[pos=.4,fill=white,inner sep=1pt]{\Large$h_n$} (0g);	
+	
+
+	% -----------------   Horizontal vertical -----------
+	\draw[-stealth, shorten >= 0pt] (5a) to node{} (4a);
+	\draw[-stealth, shorten >= 0pt] (4a) to node{} (3a);
+	\draw[-stealth, shorten >= 0pt] (3a) to node{} (2a);
+	\draw[-stealth, shorten >= 0pt] (2a) to node{} (0a);
+	
+	\draw[-stealth, shorten >= 0pt] (5i) to node{} (4i);
+	\draw[-stealth, shorten >= 0pt] (4i) to node{} (3i);
+	\draw[-stealth, shorten >= 0pt] (3i) to node{} (2i);
+	\draw[-stealth, shorten >= 0pt] (2i) to node{} (0i);
+
+	}\textbf{}		
+		
+	\end{tikzpicture}
+\captionof{figure}{Hauteur d'une Skip list.}
+\caption*{ \small Source: \textit{Repéré sur  \href{https://github.com/mhyee/latex-examples/blob/master/skip_list.tex}{ www.github.com}, origine de Ming-Ho Yee, le code source développé figure en annexe.}}
+\end{center}
+
+~\\
+
+Supposons qu'on a une Skip list, figure 14, avec n nœuds ce qui voudrait dire qu'on a déjà fait n insertions auparavant, et chaque nœud a atteint une certaine hauteur. Appelons ces hauteurs ($h_1, h_2, ... ,h_i, ..., h_n $), et donc il y a un nœud \textit{e.g.}, (48) avec la plus grande hauteur ($h_i$).
+
+~\\
+
+\subsection{Avec une forte probabilité}
+Dans les algorithmes randomisés la notion "avec une forte probabilité"; est une notion technique très puissante qui peut être utilisée, pour notre algorithme \cite{ArticleDemaine}.
+
+~\\
+
+\begin{theorem}
+	Avec une forte probabilité, le coût de la recherche dans chaque Skip lists de n nœuds est en $\mathcal{O}(\log_2 n) $ \cite{ArticleDemaine}.
+\end{theorem}
+
+~\\
+
+\textbf {Définition informelle:}
+Un événement E se produit avec une forte probabilité si, $\forall \alpha \ge 1$, il existe un  choix approprié de constantes pour lesquelles E se produit avec une probabilité au moins $(1- \mathcal{O}( \dfrac{1}{n^\alpha} ) )$ \cite{ArticleDemaine}.
+
+~\\
+
+\textbf {Définition précise:} un événement (paramétré) $E_\alpha$ se produit avec une forte probabilité si, $\alpha \ge 1 $, $E_\alpha$ se produit avec une probabilité au moins $(1 - \dfrac{c_\alpha}{n^\alpha}$), où $c_\alpha$ est une constante en fonction de $\alpha$ \cite{ArticleDemaine}. 
+
+~\\
+Le terme $\dfrac{1}{n^\alpha}$ est la probabilité d'erreur. 
+
+~\\~\\~\\
+Finalement l'idée derrière tout ça, est que la probabilité d'erreur peut être très très faible en définissant $\alpha$ en quelque chose de grand, par ex. 100 \cite{ArticleDemaine}. 
+
+~\\~\\
+\textbf {Question:} Quelle est la probabilité qu'au moins un des nœuds n de la Skip lists (figure 13) ait dépassé la hauteur h ?
+
+~\\
+\textbf {Réponse:} Pour répondre à ça, on va voir l'inégalité de Boole:
+~\\~\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Théorème l'inégalité de Boole %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source :  Inégalité de Boole
+% 28 janv. 2016 • Auteur: Jean-François Renaud, professeur de mathématique
+% Institution: Université du Québec à Montréal (UQAM)
+% Champ: Probabilités et statistique
+% Cours: Probabilités
+% https://www.youtube.com/watch?v=uQT2Qc_TNEQ
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Théorème l'inégalité de Boole %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{slantedtheorem}{l'inégalité de Boole}{ohmy}
+	Il est bien connu que, pour deux événements $E_1$ et $E_2$, la probabilité de leur union est plus petite ou égale à la somme des deux probabilités.
+	 \begin{center}
+	 	$P(E_1 \cap E_2) \le P(E_1) + P(E_2) $
+	 \end{center} 
+	En d'autres mots, la mesure de probabilité est sous-additive:
+	\begin{center}
+		$P(\cup_{i=1}^n E_i) \le \sum_{1}^{n} P(E_i)  $ \cite{InegaliteDeBoole}
+	\end{center} 
+\end{slantedtheorem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+~\\ 
+La hauteur de la Skip list avec une forte probabilité a c.$\log(n)$ niveaux,\\  $\forall n$ éléments,  avec $ c \ge 1$ et p=$\dfrac{1}{2}$ 
+~\\
+
+\begin{proof}	
+~\\~\\ 
+La probabilité pour qu'un élément particulier fasse partie de plus de $c.\log_2(n)$ niveaux est : \\
+\begin{equation} 
+ \begin{aligned}
+ 		P(\text{Un élément dans plus de $c.\log_2(n)$ niveaux} ) & = \dfrac{1}{2^{c.\log_2 (n)}} \nonumber \\				
+ \end{aligned}
+\end{equation}
+~\\~\\
+Et d'après \hypertarget{depart5}{\hyperlink{Rappel1}{le Rappel 1 des identités logarithmiques}} :  $a^{\log_a(b)} = b$
+\begin{equation} 
+ \begin{aligned}
+	P(\text{Un élément dans plus de $c.\log_2(n)$ niveaux} ) &= \dfrac{1}{n^c} \nonumber \\ 		
+ \end{aligned} 		
+\end{equation}	
+~\\
+Et appliquons l'inégalité de Boole, pour calculer la probabilité pour n'importe quel élément fait partie de plus de $c.\log_2(n)$ niveaux. 
+\begin{equation} 
+	\begin{aligned}
+		P(\text{Tout élément dans plus de $c.\log_2(n)$ niveaux} ) &\le \\
+		n * P(\text{Un élément dans plus de $c.\log_2(n)$ niveaux} ) \\
+		& \le n * \dfrac{1}{n^c} \nonumber \\
+		& \le \dfrac{1}{n^{c-1}}\nonumber \\	
+	\end{aligned}
+\end{equation}
+\end{proof}
+~\\
+Ainsi, la probabilité d’erreur est polynomialement petite, et l’exposant ($\alpha = c-1$) peut être rendu arbitrairement grand par un choix approprié de la constante dans la limite de niveau de $\mathcal{O}(\log n)$. \cite{ArticleDemaine} \\Avec cette forte probabilité, si n grandit cette probabilité diminue proportionnellement. 
+
+~\\
+\textbf {Exemple : } Pour c = 3, n=1.000, \\
+La probabilité d’erreur, $P_{erreur} = \dfrac{1}{1.000^2} = \dfrac{1}{1.000.000} $ \medskip \\ 
+Dans cet exemple, c'est environ une chance sur un million qu'on dépasse la hauteur. \medskip \\
+C’est pourquoi nous n’avons généralement pas à définir de limite explicite sur la hauteur de la Skip list, par ce que la chance d'avoir une grande hauteur en lançant simplement une pièce à plusieurs reprises est vraiment très très faible. 
+ 
+~\\~\\
+Avec une forte probabilité la hauteur de la Skip list est logarithmique, c'est donc assez comparable aux arbres binaires de recherche équilibrés.
+
+~\\~\\
+\textbf {Avantages} 
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item beaucoup plus simple à implementer ;
+	\item facile à gérer que la plus part des arbres binaires de recherhe ;	
+	\item rapidité d'exécution \cite{ArticleZeratti}.
+\end{description}
+
+
+~\\
+
+\textbf {Inconvénient} 
+\begin{description}[font=$\bullet$~\normalfont\scshape\color{red!50!black}]
+	\item Les garanties sont un peut plus faible dans le sens ou c'est pas des garanties au pire cas càd qui sont toujours correcte.
+\end{description}
+
+~\\
+
+
+\section {Complexité en temps} 
+
+\subsection {Complexité en temps } 
+Le temps nécessaire à l’exécution des opérations de recherche, de suppression et d’insertion est dominé par le temps nécessaire à la recherche d'un élément approprié. Pour les opérations insertion et suppression, il existe un coût supplémentaire proportionnel au niveau du nœud inséré ou supprimé.  
+\bigskip \\ 
+Le temps nécessaire pour trouver un élément est proportionnel à la longueur du chemin de recherche, qui est déterminée par le modèle dans lequel des éléments de différents niveaux apparaissent lorsque nous parcourons la liste. \cite{ArticlePugh} \\
+
+
+%La complexité  \hypertarget{$Moyenne^2$}{\hyperlink{$Moyenne^2$}{$Moyenne^2$}} en temps d’exécution sur l'ensemble des opérations effectuées pour tous les n éléments de l'ABR.\\
+
+\begin{table}[h]  
+	\centering
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Complexité  		&  Moyenne       &  Pire          \\
+		\hline
+		Recherche   		& $\mathcal{O}(\log(n))$ &  $\mathcal{O}$(n)   \\	
+		\hline
+		Insertion   		& $\mathcal{O}(\log(n))$ &  $\mathcal{O}$(n)   \\	
+		\hline
+		Suppression 		& $\mathcal{O}(\log(n))$ &  $\mathcal{O}$(n)   \\	
+		\hline
+	\end{tabular}
+	\caption{Complexité en temps des Skip list} 
+	\label{table:mytable}
+\end{table}
+
+
+\newpage
+\section{Conclusion}
+Une Skip list est une structure de données très efficace pour faire des recherches rapides sur une liste chaînée ordonnée. Le but est d’améliorer les listes chaînées ordonnées pour avancer plus rapidement. De cette manière, en quelques sauts on accède à l’élément recherché. Pour cela, dans la Skip list on ajoute des niveaux avec certains éléments de la liste chaînée de base. C’est-à-dire que le niveau $L_{1}$, le plus bas, contient tous les éléments de la liste chaînée de base, et le niveau supérieur contient un peu moins d’éléments, \textit{etc}. Par exemple, s’il y a n éléments à la hauteur 1, on s’attend à obtenir n*p éléments de hauteur 2 \cite{ArticleZeratti}. Où p est un paramètre important dans les Skip lists. Idéalement p=$\dfrac{1}{2}$ \cite{ArticlePugh}, ainsi chaque élément à une chance sur deux de se retrouver sur le niveau supérieur. En poursuivant ce processus, on aura de moins en moins d’éléments pour les niveaux supérieurs. Des pointeurs supplémentaires devront être ajoutés pour permettre de monter ou de descendre entre les niveaux.
+~\\~\\
+Les Skip lists peuvent avoir une complexité en pire des cas telle que celle des listes chaînées. Lors de l’insertion des éléments, nous pouvons éventuellement observer un comportement où tous les nœuds auront la même hauteur, ce qui est très rare par la forte probabilité.
+
+~\\
+Les Skip lists peuvent être considérées comme des alternatives aux Arbres binaires de recherche équilibrée, dans le sens ou c'est un équilibre au pire des cas mais dont les garanties sont similaires, et avoir une garantie sur la hauteur en $\mathcal{O}$(log(n)), ça implique qu’on sait faire la recherche, l’insertion et la suppression en $\mathcal{O}$(log(n)).
+
+~\\
+Par contre, les Skip lists sont triées et efficaces sans avoir besoin d’un rééquilibrage compliqué comme c’est le cas avec les Arbres binaires de recherche. Comme pour les TAS avec les éclatements et les fusions, ou les AVL avec les rotations simples ou double gauche/droite. Cependant, cela peut se révéler pénible à mettre en œuvre.
+
+~\\
+Les Skip lists ont fait leur apparition dans plusieurs applications comme : Apache Portable Run-time, les bases de données relationnelles comme SingleStore, les serveurs Cyrus IMAP, \textit{etc}\footnote[5]{ \url{https://en.wikipedia.org/wiki/Skip\_list} {https://en.wikipedia.org/wiki/Skip\_list} }.
+
+
+~\\~\\~\\
+\section{Annexe}
+Toutes les sources et les codes source qu'ont servi à la rédaction de ce travail se trouvent sur le document latex sur ce lien :
+\href{https://github.com/YounessKazzoul/Skip-lists}{https://github.com/YounessKazzoul/Skip-lists} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% faire apparaître une référence dans la bibliographie sans la citer explicitement dans le texte
+
+\nocite{ArticleDemaine} \nocite{ArticleHamel} \nocite{ArticleSchwar} 
+\nocite{NoteCours} \nocite{ArticlePugh} \nocite{ArticleZeratti}
+\nocite{InegaliteDeBoole} 
+\nocite{ArticleDan} \nocite{WEBSITE:2}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain} % We choose the "plain" reference style
+\bibliography{ref} % Entries are in the refs.bib file
+
+
+
+
+
+
+
+
+
+
+	
+	
+\end{document}

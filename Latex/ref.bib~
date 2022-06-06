@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source :
+% https://latex-tutorial.com/tutorials/bibtex/
+% Source: 
+% https://fr.overleaf.com/learn/latex/Bibliography_management_with_bibtex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@ARTICLE{ArticleDemaine,
+    AUTHOR="Erik Demaine and al.",
+    TITLE="Introduction to Algorithms, Lecture Notes on Skip Lists.pdf",
+    YEAR="March 18, 2004",    
+    NOTE="MIT 6.046J/18.410J"
+}
+
+
+@ARTICLE{ArticleHamel,
+    AUTHOR="Sylvie Hamel",
+    TITLE="Dictionnaires ordonnés et Skip List ",
+    NOTE = {IFT2015, A2009, Université de Montréal}
+}
+
+@ARTICLE{ArticleSchwar,
+    AUTHOR="François Schwarzentruber",
+    TITLE="Skip lists - Listes à sauts",
+    YEAR="13 avril, 2021",
+    NOTE = {École normale supérieure de Rennes, url : \url{http://people.irisa.fr/Francois.Schwarzentruber/algo2/08skiplists.pdf}}
+    %NOTE="Maître de conférences dans le département informatique et télécommunications"
+}
+
+url : \url{https://steve.zaretti.be/files/skiplist.pdf}
+
+
+%Note de cours1
+@book{NoteCours,
+	author = {Véronique Bruyère},
+	year = {2021},
+	title = {Rappels sur les arbres},
+	NOTE = {notes prises dans le cours Structures de données - Université UMONS}
+}
+
+%Note de cours2
+@book{NoteCours2,
+	author = {Gilles G EERAERTS},
+	year = {2010–2011},
+	title = {ALGORITHMIQUE - 3E ÉDITION},
+	NOTE = {Notes du cours S-INFO-048 - Année préparatoire au master 60 en informatique ULB–UMons}
+}
+
+@article{ArticlePugh,
+	title={Skip lists : A probabilistic alternative to balanced trees},
+	author={William Pugh},
+	journal={Communications of the ACM},
+	volume={33},
+	number={6},
+	pages={668--676},
+	year={1989},
+	publisher={Communications of the ACM}
+}
+
+@ARTICLE{ArticleZeratti,
+    AUTHOR="Steve Zaretti",
+    TITLE="La skip-list",
+    YEAR="15 août 2016
+    NOTE="UMONS."
+}
+
+%Inégalité de Boole
+@book{InegaliteDeBoole,
+	author = {Jean-François Renaud},
+	year = {2021},
+	title = {Cours Probabilités et statistique},
+	publisher = {Université du Québec à Montréal (UQAM)}
+}
+
+%Website
+@article{ArticleDan,
+    AUTHOR = "Dan Suthers",    
+    year = {14 Sep 2020},
+    TITLE = "Probabilistic Analysis and Randomized Algorithms.",
+    NOTE="University of Hawaii Information and Computer Sciences."    
+}
+%Website
+@MISC{WEBSITE:2,
+    HOWPUBLISHED = "\url{https://www.coursera.org/lecture/trees-graphs-basics/skip-lists-7Uggo}",
+    AUTHOR = "Sriram Sankaranarayanan",
+    TITLE = "Trees and Graphs: Basics - Université du Colorado of Boulder",
+    NOTE = "Accessed on février 2022",
+    PUBLISHER={coursera}
+}
+
+
+
+
+
+
+	
