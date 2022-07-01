@@ -1,0 +1,19 @@
+\begin{thebibliography}{}
+
+\bibitem[Hamel, 2022]{ArticleHamel}
+Hamel, S. (Consulté en octobre 2022).
+\newblock Dictionnaires ordonnés et skip list.
+\newblock IFT2015, A2009, Université de Montréal.
+
+\bibitem[Pugh, 2021]{ArticlePugh}
+Pugh, W. (Rédaction en 1989, Consulté en otobre 2021).
+\newblock Skip lists : A probabilistic alternative to balanced trees.
+\newblock {\em Communications of the ACM}, 33(6):668--676.
+
+\bibitem[Wikipedia, 2021]{Wikipedia}
+Wikipedia (Consulté en novembre 2021).
+\newblock Skip list.
+\newblock \url{https://en.wikipedia.org/wiki/Skip_list}.
+\newblock Re-édité en Mars 2022,.
+
+\end{thebibliography}
